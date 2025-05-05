@@ -1,4 +1,7 @@
+import LocationsPage from "./components/LocationInfo";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer"
+import LocationsHero from "./components/HeroLocation";
 
 
 const Locations = () => {
@@ -6,10 +9,9 @@ const Locations = () => {
     return (
         <>
         <Navbar/>
-            <section className="mt-20">
-                <h1>Locations</h1>
-            </section>
-        
+        <LocationsHero/>
+        <LocationsPage/>
+        <Footer/>
         </>
     )
 }

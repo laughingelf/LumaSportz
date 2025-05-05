@@ -1,13 +1,17 @@
+import Footer from "./components/Footer";
+import PricingHero from "./components/HeroPricing";
 import Navbar from "./components/Navbar";
+import PricingSection from "./components/Pricing";
+
 
 const Prices = () => {
   return (
     <>
       <Navbar />
-      <section className="mt-20 px-6">
-        <h1 className="text-3xl font-bold text-white">Prices</h1>
-        {/* other content */}
-      </section>
+      <PricingHero/>
+      <PricingSection/>
+      
+      <Footer/>
     </>
   );
 };

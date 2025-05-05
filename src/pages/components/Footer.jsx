@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
     return (
       <footer className="bg-blue-300 text-gray-800 py-10">
@@ -15,10 +17,10 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="/" className="hover:underline">Home</a></li>
-              <li><a href="/about" className="hover:underline">Staff</a></li>
-              <li><a href="/prices" className="hover:underline">Prices</a></li>
-              <li><a href="/locations" className="hover:underline">Locations</a></li>
+              <li><Link to="/" className="hover:underline">Home</Link></li>
+              <li><Link to="/about" className="hover:underline">Staff</Link></li>
+              <li><Link to="/prices" className="hover:underline">Prices</Link></li>
+              <li><Link to="/locations" className="hover:underline">Locations</Link></li>
             </ul>
           </div>
   
@@ -26,10 +28,10 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Programs</h3>
             <ul className="space-y-2">
-              <li><a href="/foam-parties" className="hover:underline">Foam Parties</a></li>
-              <li><a href="/movie-snow-parties" className="hover:underline">Movie/Snow Parties</a></li>
-              <li><a href="/faq" className="hover:underline">FAQ</a></li>
-              <li><a href="/contact" className="hover:underline">Contact</a></li>
+              <li><Link to="/foam-parties" className="hover:underline">Foam Parties</Link></li>
+              <li><Link to="/movie-snow-parties" className="hover:underline">Movie/Snow Parties</Link></li>
+              <li><Link to="/faq" className="hover:underline">FAQ</Link></li>
+              <li><Link to="/contact" className="hover:underline">Contact</Link></li>
             </ul>
           </div>
   

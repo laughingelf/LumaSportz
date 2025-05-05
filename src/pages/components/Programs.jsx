@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function ProgramsSection() {
     const programs = [
       {
@@ -53,15 +55,15 @@ export default function ProgramsSection() {
                 <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-2xl font-semibold mb-2 text-black">{program.title}</h3>
                   <p className="text-gray-700 flex-grow">{program.description}</p>
-                  <a
-                    href={program.link}
+                  <Link
+                    to={program.link}
                     className="mt-4 inline-flex items-center text-blue-600 font-semibold group text-lg"
                     >
                     <span className="mr-2 bg-blue-500 text-white rounded-full px-1 transition-transform transform group-hover:scale-115 text-2xl">
                         →
                     </span>
                     <span className=" group-hover:underline transition hover:scale-105">Learn More</span>
-                    </a>
+                    </Link>
 
 
 
