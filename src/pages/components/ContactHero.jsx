@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const LocationsHero = () => {
+const ContactHero = () => {
   return (
     <section className="relative bg-black text-white py-20 px-6 text-center overflow-hidden">
       
@@ -12,19 +12,20 @@ const LocationsHero = () => {
       />
 
       <div className="max-w-4xl mx-auto z-10 relative">
-        <h1 className="text-5xl font-bold mb-4">Find a Program Near You</h1>
+        <h1 className="text-5xl font-bold mb-4">Ready to Level Up Your Game?</h1>
         <p className="text-xl mt-4 mb-8">
-          Discover nearby locations offering Karate, Basketball, and Cheerleading programs. Easily enroll at the location that works best for you!
+        We’re here to support young athletes every step of the way. Whether you’ve got questions or 
+        want to get your child involved, we’d love to hear from you.
         </p>
-        <Link
+        {/* <Link
           to="/contact"
           className="inline-block bg-white text-blue-600 font-semibold py-3 px-8 rounded-full hover:bg-gray-100 transition shadow-md hover:scale-105"
         >
           Contact Us
-        </Link>
+        </Link> */}
       </div>
     </section>
   );
 };
 
-export default LocationsHero;
+export default ContactHero;

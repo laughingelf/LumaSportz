@@ -29,9 +29,9 @@ export default function AboutSection() {
           {/* Image or Graphic */}
           <div className="relative">
             <img
-              src="/img/luma-about-ph.svg"
+              src="/img/luma-foamparty.webp"
               alt="Kids playing"
-              className="rounded-2xl shadow-lg w-full object-cover h-[300px] md:h-[400px]"
+              className="rounded-2xl shadow-lg shadow-gray-500 w-full object-cover h-[300px] md:h-[400px]"
             />
           </div>
         </div>

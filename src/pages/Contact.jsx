@@ -1,4 +1,8 @@
+import ContactForm from "./components/ContactForm";
+import ContactHero from "./components/ContactHero";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import ContactInfo from "./components/ContactInfo";
 
 
 const Contact = () => {
@@ -6,8 +10,10 @@ const Contact = () => {
     return (
         <>
         <Navbar/>
-            <h1>Contact</h1>
-
+        <ContactHero/>
+        <ContactInfo/>
+        <ContactForm/>
+        <Footer/>
         </>
     )
 }

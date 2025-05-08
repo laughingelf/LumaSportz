@@ -2,14 +2,14 @@ import { Link } from "react-router-dom";
 
 const PricingHero = () => {
     return (
-      <section className="relative bg-black text-white py-24 px-6 text-center">
+      <section className="relative bg-black text-white  py-24 px-6 text-center">
         {/* Optional Background Image */}
         <img
-          src="/img/luma-hero.svg"
+          src="/img/luma-hero.webp"
           alt="Kids having fun"
           className="absolute inset-0 w-full h-full object-cover opacity-60 z-0"
         />
-        <div className="relative z-10 max-w-4xl mx-auto">
+        <div className="relative z-10 max-w-4xl mx-auto mt-8">
           <h1 className="text-5xl font-extrabold mb-4">Pricing Made Simple</h1>
           <p className="text-xl mb-8">
             Affordable, flexible plans for every child and every family. No hidden fees—just pure fun!

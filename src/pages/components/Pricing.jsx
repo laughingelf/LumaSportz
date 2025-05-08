@@ -44,7 +44,7 @@ const PricingSection = () => {
     <section className="py-16 text-center mt-8 bg-gray-50">
       {/* Top Program Cards */}
       <div className="max-w-7xl mx-auto px-6 mb-12">
-        <h2 className="text-4xl font-bold text-blue-600 mb-10">Our Programs</h2>
+        <h2 className="text-4xl font-bold text-blue-600 mb-10 underline">Our Programs</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {programs.map((program) => (
                 <div

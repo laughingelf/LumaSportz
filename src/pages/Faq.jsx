@@ -1,3 +1,5 @@
+import FAQSection from "./components/Faq";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 
 
@@ -6,7 +8,8 @@ const Faq = () => {
     return (
         <>
         <Navbar/>
-            <h1>faq</h1>
+        <FAQSection/>
+        <Footer/>
 
         </>
     )

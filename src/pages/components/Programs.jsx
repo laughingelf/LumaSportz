@@ -9,7 +9,7 @@ export default function ProgramsSection() {
         link: "/prices"
       },
       {
-        title: "Basketball",
+        title: "Basketball & Soccer",
         image: "/img/little-all-stars.svg",
         description: "Dribble, shoot, and score in our high-energy basketball sessions for all skill levels.",
         link: "/prices"
@@ -43,7 +43,7 @@ export default function ProgramsSection() {
     return (
       <section className="py-16 bg-gray-100">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-blue-600">Our Programs</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-blue-600 underline">Our Programs</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {programs.map((program) => (
               <div key={program.title} className="bg-white rounded-2xl shadow-md shadow-gray-500 hover:shadow-lg transition overflow-hidden flex flex-col">

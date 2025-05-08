@@ -3,9 +3,9 @@ export default function HeroMain() {
       <section className="relative min-h-[80vh] w-full overflow-hidden flex items-center justify-center">
         {/* Background image */}
         <img
-          src="/img/luma-hero.svg"
+          src="/img/luma-hero.webp"
           alt="Hero Background"
-          className="absolute inset-0 bg-black opacity-40 w-full h-full object-cover z-0"
+          className="absolute inset-0 bg-black opacity-50 w-full h-full object-cover z-0"
         />
   
         {/* Center logo */}
