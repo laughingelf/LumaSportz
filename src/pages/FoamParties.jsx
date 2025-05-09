@@ -1,4 +1,8 @@
+import FoamHero from "./components/FoamHero";
+import FoamPartyGallery from "./components/FoamImages";
+import FoamPartyPackages from "./components/FoamInfo";
 import Navbar from "./components/Navbar";
+import Footer from './components/Footer';
 
 
 const FoamParties = () => {
@@ -6,7 +10,10 @@ const FoamParties = () => {
     return (
         <>
         <Navbar/>
-            <h1>Foam Parties</h1>
+            <FoamHero/>
+            <FoamPartyPackages/>
+            <FoamPartyGallery/>
+            <Footer/>
         
         </>
     )

@@ -1,6 +1,6 @@
 export default function HeroMain() {
     return (
-      <section className="relative min-h-[80vh] w-full overflow-hidden flex items-center justify-center">
+      <section className="relative min-h-[80vh] w-full overflow-hidden flex items-center justify-center mt-8">
         {/* Background image */}
         <img
           src="/img/luma-hero.webp"
@@ -12,11 +12,11 @@ export default function HeroMain() {
         <img
           src="/img/luma-logo.svg"
           alt="Hero Overlay"
-          className="absolute top-1/2 left-1/2 w-[28rem] md:w-[48rem] transform -translate-x-1/2 -translate-y-2/3 md:-translate-y-1/2 z-10"
+          className="absolute top-1/2 md:top-1/3 left-1/2 w-[28rem] md:w-[48rem] transform -translate-x-1/2 -translate-y-2/3 md:-translate-y-1/2 z-10"
         />
   
         {/* CTA at bottom */}
-        <div className="absolute bottom-4 w-full flex flex-col items-center z-20 px-6">
+        <div className="absolute bottom-4 w-full flex flex-col items-center z-10 px-6">
           <div className="flex flex-col sm:flex-row gap-4 text-center mb-6">
             <a
               href="/"

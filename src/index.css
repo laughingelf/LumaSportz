@@ -17,3 +17,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.clip-triangle {
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
+}
+
+
