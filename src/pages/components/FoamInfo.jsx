@@ -68,9 +68,9 @@ const FoamPartyPackages = () => {
           >
             {/* Background Image */}
             <img
-              src='/img/foam-bg.png'
+              src='/img/foam-bg2.png'
               alt={`${pkg.title} background`}
-              className="absolute inset-0 w-full h-full object-cover opacity-20 z-0 pointer-events-none"
+              className="absolute inset-0 w-full h-full object-cover opacity-50 z-0 pointer-events-none"
             />
 
             {/* Hanging Hole */}

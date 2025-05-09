@@ -1,4 +1,8 @@
 import Navbar from "./components/Navbar";
+import Footer from './components/Footer'
+import SnowHero from "./components/SnowHero";
+import SnowPartyInfo from "./components/SnowPartyInfo";
+import MovieNightInfo from "./components/MovieInfo";
 
 
 const MovieSnow = () => {
@@ -6,7 +10,10 @@ const MovieSnow = () => {
     return (
         <>
         <Navbar/>
-            <h1>Movie and Snow</h1>
+        <SnowHero/>
+        <SnowPartyInfo/>
+        <MovieNightInfo/>
+        <Footer/>
 
         </>
         
