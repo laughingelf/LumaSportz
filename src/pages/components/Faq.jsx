@@ -37,6 +37,16 @@ const faqs = [
     answer:
       "Level Up teaches your child how to defend themselves through Martial Arts, but does not condone or teach your child to fight. In fact, we constantly reiterate to your child to never use their karate on their friends or family each class. One of our most important skills we teach all our Little Warriors is our Stranger Danger Safety Course. God forbid anything happens to any of our children, but we also want to be proactive and educate our children how to protect themselves in the situation they are confronted by a Stranger. We keep it simple, safe, and fun for our kids to learn basic self-defense and critical thinking skills for these situations.",
   },
+  {
+    question: "What do we provide for Foam or Snow Parties?",
+    answer:
+      "Pro Grade foam cannon with safe solution, setup and take down of our equipment, Fully licensed and insured, great music with light up speakers, beach balls.",
+  },
+  {
+    question: "What do you need to provide for Foam and Snow Parties? ",
+    answer:
+      "3 Prong outlet within 200 ft of event, Water source within 75 ft, flat area of at least 20x20 ft. Grass, Concrete, or pavement are fine. Constant Adult supervision, *parties with children. Kids and Adults to have lots of fun at your Foam or Snow Party!",
+  },
 ];
 
 const FAQSection = () => {

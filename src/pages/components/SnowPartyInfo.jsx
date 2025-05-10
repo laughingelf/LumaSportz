@@ -44,7 +44,7 @@ const details = [
     content: [
       { text: 'Sit back and relax while we take care of delivery and setup' },
       { text: 'Our team will ensure that everything is in place for your event, allowing you to focus on having a great time with your guest' },
-      { text: 'Book with us Today!' }
+      { text: 'Book with us Today!', bold: true }
     ],
   },
 ];
@@ -53,7 +53,7 @@ const SnowPartyInfo = () => {
   return (
     <section className="bg-white py-16 px-6">
       <div className="max-w-6xl mx-auto text-center mb-12">
-        <h2 className="text-5xl font-bold text-blue-700 mb-2">Snow Party & Movie Night Details</h2>
+        <h2 className="text-3xl md:text-5xl font-bold text-blue-700 mb-2">Snow Party & Movie Night Details</h2>
         <p className="text-xl text-gray-600">Everything you need to know to get your party started!</p>
       </div>
 
@@ -97,7 +97,7 @@ const SnowPartyInfo = () => {
         ))}
       </div>
       <div className='mt-12'>
-        <Link to='/contact' className='text-3xl text-white bg-blue-600 px-8 py-4 rounded-full shadow-md shadow-gray-400 hover:bg-green-500 hover:shadow-lg transition'>Schedule Your Party Today!</Link>
+        <Link to='/contact' className='text-xl md:text-3xl text-white bg-blue-600 px-8 py-4 rounded-full shadow-md shadow-gray-400 hover:bg-green-500 hover:shadow-lg transition'>Schedule Your Party Today!</Link>
       </div>
     </section>
   );

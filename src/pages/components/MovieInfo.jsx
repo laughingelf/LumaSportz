@@ -41,8 +41,10 @@ const MovieNightInfo = () => {
   return (
     <section className="bg-white py-16 px-6">
       <div className="max-w-6xl mx-auto text-center mb-12">
-        <h2 className="text-5xl font-bold text-yellow-600 mb-2">Movie Night Party Info</h2>
-        <p className="text-xl text-gray-600">Get ready for a magical movie night under the stars!</p>
+        <h2 className="text-3xl md:text-5xl font-bold text-yellow-600 mb-4">Movie Night Party Info</h2>
+        <p className="text-xl text-gray-800 px-4 md:px-16">Lets us host your next movie night! Whether your hosting a family event or
+        a staff appreciation night, let us bring a magical movie experience to your event. We provide an inflatable 
+        movie screen, projector, streaming or DVD player, and the red carpet. Explore our website for bookings and more information.</p>
       </div>
 
       <div className="flex justify-center mb-10">
