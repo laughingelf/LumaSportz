@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import { Film, Clock, Truck } from 'lucide-react';
 
 const details = [
@@ -6,33 +6,32 @@ const details = [
     title: "What's Included",
     icon: <Film size={40} className="text-yellow-500 mb-4" />,
     content: [
-      { text: 'Giant Outdoor Movie Screen', bold: true },
-      { text: 'High-quality projector & sound system' },
-      { text: 'Your choice of movie (PG/PG-13)' },
-      { text: 'Popcorn machine add-on available' },
-      { text: 'Perfect for schools, churches, or neighborhoods!' }
+      { text: 'Inflatable Movie Screen' },
+      { text: 'Loud Speakers & Projector' },
+      { text: 'Streaming or DVD' },
+      { text: '3 Bags of Popcorn & Popcorn Machine' },
+      { text: 'Ticket Stand & Red Carpet' },
+      { text: 'Ambient Lighting' },
+      { text: 'Just a Little Power', bold: true },
     ],
   },
   {
-    title: 'Cost & Time',
+    title: 'Pricing',
     icon: <Clock size={40} className="text-yellow-500 mb-4" />,
     content: [
-      { text: 'Movie Night Rental', bold: true },
-      { text: '2 Hours - $350' },
-      { text: '$100 per additional hour' },
-      { text: 'Add-Ons', bold: true },
-      { text: 'Popcorn Machine - $50' },
-      { text: 'Extra Speakers - $25' },
-      { text: 'Setup & Takedown Included', bold: true },
+      { text: 'Standard Movie Night', bold: true },
+      { text: '$300' },
     ],
   },
   {
-    title: 'Delivery & Setup',
+    title: 'Add-Ons Available',
     icon: <Truck size={40} className="text-yellow-500 mb-4" />,
     content: [
-      { text: 'Delivered & set up 30 mins before start time' },
-      { text: 'Requires power source within 100ft' },
-      { text: 'We handle everything so you can enjoy the show!' }
+      { text: 'Candy Bars & Extra Bags of Popcorn' },
+      { text: 'Snack Size Candy & Drinks' },
+      { text: 'Glow in the Dark LED Party Swag' },
+      { text: 'Let us know if you have the staff to cover the ticket stand' },
+      { text: 'We can provide this at an extra cost' },
     ],
   },
 ];
@@ -86,6 +85,9 @@ const MovieNightInfo = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className='mt-12'>
+        <Link to='/contact' className='text-xl md:text-3xl text-white bg-blue-600 px-8 py-4 rounded-full shadow-md shadow-gray-400 hover:bg-green-500 hover:shadow-lg transition'>Schedule Your Movie Today!</Link>
       </div>
     </section>
   );
