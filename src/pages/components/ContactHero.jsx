@@ -1,15 +1,43 @@
-import { Link } from 'react-router-dom';
+
 
 const ContactHero = () => {
   return (
     <section className="relative bg-black text-white py-20 px-6 text-center overflow-hidden">
       
       {/* Image in the background as a real <img> element */}
-      <img
-        src="/img/luma-hero.webp"
-        alt="Hero"
-        className="absolute inset-0 w-full h-full object-cover opacity-60 z-0"
-      />
+      <picture>
+          {/* WebP for large screens */}
+          <source
+            srcSet="/img/luma-hero.webp"
+            type="image/webp"
+            media="(min-width: 768px)"
+          />
+          {/* WebP for small screens */}
+          <source
+            srcSet="/img/luma-hero-sm.webp"
+            type="image/webp"
+            media="(max-width: 767px)"
+          />
+          {/* PNG fallback for large screens */}
+          <source
+            srcSet="/img/luma-hero.png"
+            type="image/png"
+            media="(min-width: 768px)"
+          />
+          {/* PNG fallback for small screens */}
+          <source
+            srcSet="/img/luma-hero-sm.png"
+            type="image/png"
+            media="(max-width: 767px)"
+          />
+
+          {/* Fallback <img> for browsers that don't support <picture> */}
+          <img
+            src="/img/luma-hero.png"
+            alt="Hero Background"
+            className="absolute inset-0 bg-black opacity-50 w-full h-full object-cover z-0"
+          />
+        </picture>
 
       <div className="max-w-4xl mx-auto z-10 relative">
         <h1 className="text-5xl font-bold mb-4">Ready to Level Up Your Game?</h1>

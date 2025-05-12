@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { Film, Clock, Truck } from 'lucide-react';
 
 const details = [
@@ -58,14 +57,14 @@ const MovieNightInfo = () => {
         {details.map((item, idx) => (
           <div
             key={idx}
-            className="relative bg-yellow-50 rounded-t-2xl pb-10 pt-8 px-6 shadow-md hover:shadow-xl transition group overflow-hidden"
+            className="relative bg-white-50 rounded-t-2xl pb-10 pt-8 px-6 shadow-md hover:shadow-xl transition group overflow-hidden"
           >
             {/* Optional Background Image */}
-            {/* <img
+            <img
               src="/img/movie-bg.png"
               alt={`${item.title} background`}
               className="absolute inset-0 w-full h-full object-cover opacity-20 z-0 pointer-events-none"
-            /> */}
+            />
 
             <div className="relative z-10 text-center">
               {item.icon}
@@ -87,7 +86,8 @@ const MovieNightInfo = () => {
         ))}
       </div>
       <div className='mt-12'>
-        <Link to='/contact' className='text-xl md:text-3xl text-white bg-blue-600 px-8 py-4 rounded-full shadow-md shadow-gray-400 hover:bg-green-500 hover:shadow-lg transition'>Schedule Your Movie Today!</Link>
+        <a target='_blank' href='https://docs.google.com/forms/d/e/1FAIpQLSen53U937YZtJsi6-JgIpZX9TDzY8m0a-vrCtxhwuWj7YzANw/viewform' 
+        className='text-xl md:text-3xl text-white bg-blue-600 px-8 py-4 rounded-full shadow-md shadow-gray-400 hover:bg-green-500 hover:shadow-lg transition'>Schedule Your Movie Today!</a>
       </div>
     </section>
   );

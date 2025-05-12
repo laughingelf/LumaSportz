@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { CheckCircle, Clock, Truck } from 'lucide-react';
 
 const details = [
@@ -97,7 +96,8 @@ const SnowPartyInfo = () => {
         ))}
       </div>
       <div className='mt-12'>
-        <Link to='/contact' className='text-xl md:text-3xl text-white bg-blue-600 px-8 py-4 rounded-full shadow-md shadow-gray-400 hover:bg-green-500 hover:shadow-lg transition'>Schedule Your Party Today!</Link>
+        <a target='_blank' href='https://docs.google.com/forms/d/e/1FAIpQLSfYS1EiPrYJ3Z48mS3PeSyuoztMyx-BTAbQ0NpdYJQvisdmuQ/viewform' 
+        className='text-xl md:text-3xl text-white bg-blue-600 px-8 py-4 rounded-full shadow-md shadow-gray-400 hover:bg-green-500 hover:shadow-lg transition'>Schedule Your Party Today!</a>
       </div>
     </section>
   );

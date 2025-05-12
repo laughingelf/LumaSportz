@@ -22,19 +22,19 @@ export default function ProgramsSection() {
       },
       {
         title: "Foam Parties",
-        image: "/img/foamnfun.svg",
+        image: "/img/foamnfun2.svg",
         description: "The ultimate summer fun—music, dancing, and mountains of foam!",
         link: "/foam-parties"
       },
       {
         title: "Movie Nights",
-        image: "/img/programs/movies.jpg",
+        image: "/img/movie-nights.svg",
         description: "Family-friendly movies under the stars with snacks, laughter, and community.",
         link: "/movie-snow-parties"
       },
       {
         title: "Winter Snow Parties",
-        image: "/img/programs/snow.jpg",
+        image: "/img/snow-party.svg",
         description: "Bring the magic of winter to Texas with our snowy, festive party experience!",
         link: "/movie-snow-parties"
       },

@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 
 const PricingSection = () => {
   const programs = [
@@ -6,19 +6,19 @@ const PricingSection = () => {
       title: 'Little Warriors',
       description:
         'Our Little Warriors Karate program goes beyond kicks and punches—instilling lifelong values like respect, discipline, confidence, and leadership. Through martial arts, kids build strong character and a positive mindset for success on and off the mat.',
-        button: 'Ninja HeadBands',
+        // button: 'Ninja HeadBands',
     },
     {
       title: 'Little All Stars',
       description:
         'Kickstart your child’s journey in youth sports with our beginner-friendly Soccer and Basketball program—designed to build confidence, coordination, and teamwork through fun, skill-based activities.',
-        button: 'Start Up Kit(Optional)'
+        // button: 'Start Up Kit(Optional)'
     },
     {
       title: 'Little Pom Poms',
       description:
         'Spark school spirit and self-confidence with our beginner Cheerleading program—perfect for kids to learn basic stunts, teamwork, and performance skills in a fun, encouraging environment.',
-        button: 'Start up Kit(Optional)'
+        // button: 'Start up Kit(Optional)'
     },
   ];
 
@@ -54,12 +54,12 @@ const PricingSection = () => {
                 <h3 className="text-2xl font-semibold text-gray-800 mb-4">{program.title}</h3>
                 <p className="text-gray-600 mb-6 flex-grow">{program.description}</p>
                 <div className="mt-auto">
-                    <a
-                    href="/contact"
+                    {/* <a target='_blank'
+                    href="https://level-up-mma.gymdesk.com/signup"
                     className="inline-block bg-blue-600 hover:bg-green-500 text-white shadow-md shadow-gray-500 hover:shadow-lg hover:scale-105 font-semibold py-2 px-6 rounded-full transition"
                     >
                     {program.button}
-                    </a>
+                    </a> */}
                 </div>
                 </div>
             ))}
@@ -74,7 +74,8 @@ const PricingSection = () => {
       </div>
       <div className='text-black text-3xl mb-12'>
         <p>Please use <span className='font-semibold underline text-blue-600'>Students Name</span> and <span className='font-semibold underline text-blue-600'>Age</span> when signing up. </p>
-        <p>Need help registering? Watch this video</p>
+        <p>Need help registering? <a href='https://www.youtube.com/shorts/NWB2oO-suWU' target='_blank'
+         className='underline text-green-500' >Watch this video</a></p>
       </div>
 
       {/* Pricing Options */}
@@ -87,8 +88,8 @@ const PricingSection = () => {
             <h4 className="text-xl font-bold text-gray-800 mb-2">{plan.title}</h4>
             <p className="text-blue-600 text-2xl font-semibold mb-4">{plan.price}</p>
             <p className="text-gray-600 mb-6">{plan.desc}</p>
-            <a
-              href="/contact"
+            <a target='_blank'
+              href="https://level-up-mma.gymdesk.com/signup"
               className="inline-block bg-blue-600 hover:bg-green-500 shadow-md shadow-gray-500 hover:shadow-lg hover:scale-105 text-white font-semibold py-2 px-6 rounded-full transition"
             >
               Get Started →
@@ -98,12 +99,12 @@ const PricingSection = () => {
       </div>
 
       {/* Final CTA */}
-      <a
-        href="/contact"
+      <Link
+        to="/contact"
         className="inline-block bg-green-500 hover:bg-blue-600 text-white font-bold shadow-md shadow-gray-500 hover:shadow-lg hover:scale-105 py-3 px-8 rounded-full transition shadow-lg"
       >
         Contact Us to Join! 
-      </a>
+      </Link>
     </section>
   );
 };

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom'; // or 'next/link' for Next.js
 
 const Navbar = () => {
@@ -44,13 +44,15 @@ const Navbar = () => {
           {/* Right Buttons */}
           <div className="hidden md:flex items-center space-x-4">
             <a
-              href='/'
+              target='_blank'
+              href='https://level-up-mma.gymdesk.com/signup'
               className="px-4 py-2 bg-blue-600 text-white rounded-md text-sm font-semibold hover:bg-green-500 shadow-md shadow-gray-500 hover:shadow-lg hover:scale-105 transition"
             >
               Sign Up
             </a>
             <a
-              href='/'
+              target='_blank'
+              href='https://level-up-mma.gymdesk.com/login'
               className="px-4 py-2 border-2 border-blue-600 text-blue-600 rounded-md text-sm font-semibold hover:bg-green-500 shadow-gray-500 hover:shadow-lg hover:scale-105 hover:text-white transition"
             >
               Login

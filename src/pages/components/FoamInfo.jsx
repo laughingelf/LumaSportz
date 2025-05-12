@@ -1,4 +1,3 @@
-import React from 'react';
 import { ThumbsUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -96,9 +95,10 @@ const FoamPartyPackages = () => {
                 **Must have water source and electricity within 200 ft of the event site
               </p>
 
-              <button className="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-green-500 hover:scale-105 transition">
+              <a target='_blank' href='https://docs.google.com/forms/d/e/1FAIpQLSfndLA152U9qdN0PLekQ7VogdEBAkWuybt2535LTqGjtYhTug/viewform'
+                  className="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-green-500 hover:scale-105 transition">
                 Book Now
-              </button>
+              </a>
             </div>
 
             {/* Banner Tail */}

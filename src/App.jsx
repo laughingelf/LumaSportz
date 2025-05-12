@@ -9,6 +9,7 @@ import Faq from './pages/Faq'
 import Prices from './pages/Prices'
 import Locations from './pages/Locations'
 import './App.css'
+import ScrollToTop from './pages/components/ScrollToTop'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
 
 
       <BrowserRouter>
+        <ScrollToTop/>
         <Routes>
           <Route index element={<LandingPage/>} />
           <Route path='/home' element={<LandingPage/>} />

@@ -57,8 +57,8 @@ const LocationsPage = () => {
 
               {/* CTA */}
               <div className="md:text-right">
-                <a
-                  href="/contact"
+                <a target='_blank'
+                  href="https://level-up-mma.gymdesk.com/signup"
                   className="inline-block bg-blue-600 hover:bg-green-500 text-white font-semibold py-2 px-6 rounded-full transition"
                 >
                   Enroll Now

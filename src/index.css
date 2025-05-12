@@ -2,7 +2,8 @@
 
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: "Playpen Sans", cursive;
   line-height: 1.5;
   font-weight: 400;
 
@@ -19,6 +20,10 @@
 
 .clip-triangle {
   clip-path: polygon(0 0, 50% 100%, 100% 0);
+}
+
+h1, h2, h3 {
+  font-family: "Bungee", sans-serif;
 }
 
 
