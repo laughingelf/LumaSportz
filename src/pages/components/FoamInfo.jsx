@@ -47,7 +47,7 @@ const packages = [
 
 const FoamPartyPackages = () => {
   return (
-    <section className="bg-blue-50 py-16 px-6 mx-12">
+    <section className="bg-blue-50 py-16 px-6 mx-1 md:mx-12">
       <div className="max-w-6xl mx-auto text-center mb-12">
         <h2 className="text-4xl md:text-6xl font-bold text-blue-600 mb-4">Foam Party Packages</h2>
         <p className="text-lg text-gray-700">
