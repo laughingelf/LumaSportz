@@ -71,11 +71,11 @@ const SnowPartyInfo = () => {
             className="relative bg-blue-50 rounded-t-2xl pb-10 pt-8 px-6 shadow-md hover:shadow-xl transition group overflow-hidden"
           >
             {/* Background Image */}
-            <img
+            {/* <img
               src="/img/snow-bg.png"
               alt={`${item.title} background`}
               className="absolute inset-0 w-full h-full object-cover opacity-50 z-0 pointer-events-none"
-            />
+            /> */}
 
             {/* Foreground Content */}
             <div className="relative z-10 text-center">
