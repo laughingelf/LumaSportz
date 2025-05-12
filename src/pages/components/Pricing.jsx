@@ -49,10 +49,10 @@ const PricingSection = () => {
             {programs.map((program) => (
                 <div
                 key={program.title}
-                className="bg-white rounded-2xl shadow-lg p-6 flex flex-col h-full"
+                className="bg-green-200 rounded-2xl shadow-lg p-6 flex flex-col h-full"
                 >
-                <h3 className="text-2xl font-semibold text-gray-800 mb-4">{program.title}</h3>
-                <p className="text-gray-600 mb-6 flex-grow">{program.description}</p>
+                <h3 className="text-2xl font-semibold text-blue-600 underline mb-4">{program.title}</h3>
+                <p className="text-gray-800 mb-6 flex-grow">{program.description}</p>
                 <div className="mt-auto">
                     {/* <a target='_blank'
                     href="https://level-up-mma.gymdesk.com/signup"
