@@ -1,4 +1,5 @@
 import { CheckCircle, Clock, Truck } from 'lucide-react';
+import SnowPartyImg from './SnowPartyImg';
 
 const details = [
   {
@@ -57,6 +58,7 @@ const SnowPartyInfo = () => {
       </div>
 
       <div className="flex justify-center mb-10">
+        <SnowPartyImg/>
         {/* <img
           src="/img/luma-foamparty.webp"
           alt="Foam party fun"

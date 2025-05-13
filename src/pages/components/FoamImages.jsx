@@ -18,6 +18,14 @@ const FoamPartyGallery = () => {
         </p>
       </div>
 
+      <div className="flex justify-center mb-8">
+      <iframe width="400" height="550"
+        className="shadow-lg shadow-gray-400 rounded-lg hover:scale-105 transition"
+        loading="lazy"
+        src="https://youtube.com/embed/ieEsRq-8ipw?si=uqC42X8lv-biljTl">
+        </iframe>
+      </div>
+
       {/* Top 3 images */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
         {images.slice(0, 3).map((img, index) => (
