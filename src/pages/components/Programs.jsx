@@ -44,6 +44,13 @@ export default function ProgramsSection() {
       <section className="py-16 bg-gray-100">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-blue-600 underline">Our Programs</h2>
+          <div className="flex flex-col items-center justify-center mb-8 px-4">
+            <p className="text-gray-800 max-w-3xl text-xl text-center">
+              We come to your child’s school once a week on your school’s designated day for a 30-minute session.
+              Our Little Warriors program is for ages 3 & up. Little Allstars & Little Pom Poms are available for children ages 2 & up!
+            </p>
+            <p className="text-gray-800 max-w-3xl text-lg text-center">In person class from August 12th - August 1st, 2025. Our virtual month is from August 2nd - 24th, 2025</p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {programs.map((program) => (
               <div key={program.title} className="bg-white rounded-2xl shadow-md shadow-gray-500 hover:shadow-lg transition overflow-hidden flex flex-col">
