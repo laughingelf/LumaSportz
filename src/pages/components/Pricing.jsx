@@ -33,11 +33,11 @@ const PricingSection = () => {
       price: '$80/month',
       desc: 'You can cancel at any time. Payments autodrafted on the 1st of each month.',
     },
-    {
-      title: 'Full Year(12 Months)',
-      price: '$1,025',
-      desc: 'Included Little Warrior start up Kit. Included virtual month in August 2025. Monthly Auto Draft, Full Payment, or Check. No Refunds.',
-    },
+    // {
+    //   title: 'Full Year(12 Months)',
+    //   price: '$1,025',
+    //   desc: 'Included Little Warrior start up Kit. Included virtual month in August 2025. Monthly Auto Draft, Full Payment, or Check. No Refunds.',
+    // },
   ];
 
   return (
@@ -79,7 +79,7 @@ const PricingSection = () => {
       </div>
 
       {/* Pricing Options */}
-      <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-left mb-12">
+      <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 text-left mb-12">
         {pricingOptions.map((plan) => (
           <div
             key={plan.title}

@@ -38,8 +38,8 @@ const Footer = () => {
           {/* Contact Info & Socials */}
           <div className="flex flex-col items-center md:items-start">
             <h3 className="text-lg font-semibold mb-4">Get in Touch</h3>
-            <p className="text-sm">Email: <a href="mailto:info@lumasportznfun.com" className="underline">info@lumasportznfun.com</a></p>
-            <p className="text-sm mt-2">Phone: <a href="tel:+1234567890" className="underline">(123) 456-7890</a></p>
+            <p className="text-sm">Email: <a href="mailto:info@sportznfun.com" className="underline">info@sportznfun.com</a></p>
+            <p className="text-sm mt-2">Phone: <a href="tel:+2146809155" className="underline">(214) 680-9155</a></p>
             <p className="text-sm mt-2">Follow us on social media:</p>
             <div className="flex space-x-4 mt-2 justify-center md:justify-start">
               <a href="#" aria-label="Facebook" className="hover:text-gray-200 text-2xl">📘</a>

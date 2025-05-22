@@ -9,9 +9,9 @@ const details = [
       { text: 'Loud Speakers & Projector' },
       { text: 'Streaming or DVD' },
       { text: '3 Bags of Popcorn & Popcorn Machine' },
-      { text: 'Ticket Stand & Red Carpet' },
+      // { text: 'Ticket Stand & Red Carpet' },
       { text: 'Ambient Lighting' },
-      { text: 'Just a Little Power', bold: true },
+      { text: 'All We Need Is a Little Bit of Power', bold: true },
     ],
   },
   {
@@ -19,7 +19,7 @@ const details = [
     icon: <Clock size={40} className="text-yellow-500 mb-4" />,
     content: [
       { text: 'Standard Movie Night', bold: true },
-      { text: '$300' },
+      { text: '$375' },
     ],
   },
   {
@@ -29,8 +29,8 @@ const details = [
       { text: 'Candy Bars & Extra Bags of Popcorn' },
       { text: 'Snack Size Candy & Drinks' },
       { text: 'Glow in the Dark LED Party Swag' },
-      { text: 'Let us know if you have the staff to cover the ticket stand' },
-      { text: 'We can provide this at an extra cost' },
+      // { text: 'Let us know if you have the staff to cover the ticket stand' },
+      // { text: 'We can provide this at an extra cost' },
     ],
   },
 ];

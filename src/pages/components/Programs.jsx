@@ -11,7 +11,7 @@ export default function ProgramsSection() {
       {
         title: "Basketball & Soccer",
         image: "/img/little-all-stars.svg",
-        description: "Dribble, shoot, and score in our high-energy basketball sessions for all skill levels.",
+        description: "Dribble, shoot, and score in our high-energy basketball & Soccer sessions for all skill levels.",
         link: "/prices"
       },
       {

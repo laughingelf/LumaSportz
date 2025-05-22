@@ -7,9 +7,7 @@ const packages = [
     price: '$325',
     duration: '1 hour of FOAMtasticness',
     features: [
-      'New - Free Digital Party Invite',
       'Fun Energetic Music!',
-      'Beach Balls',
       'Professional Foam Equipment',
       'Trained Foam Canon & Fun Operator',
     ],
@@ -20,10 +18,8 @@ const packages = [
     price: '$425',
     duration: '1 hour Color FOAMbuwamba',
     features: [
-      'New - Free Digital Party Invite',
       'Add Colored Foam to The Party!',
       'Fun Energetic Music!',
-      'Beach Balls',
       'Professional Foam Equipment',
       'Trained Foam Canon & Fun Operator',
     ],
@@ -34,10 +30,8 @@ const packages = [
     price: '$450',
     duration: '1 hour Glow-N-the-Dark FOAM Awesomeness!',
     features: [
-      'New - Free Digital Party Invite',
       "Blacklights, Disco lights, & LED's",
       'Fun Energetic Music!',
-      'Beach Balls',
       'Professional Foam Equipment',
       'Trained Foam Canon & Fun Operator',
     ],

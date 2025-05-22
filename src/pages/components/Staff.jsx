@@ -45,9 +45,9 @@ const Staff = () => {
                 alt="" />
             </picture> 
                 <div class="text-black max-w-xl">
-                <h3 class="text-2xl font-semibold mb-2 text-blue-600 underline">Edward Stevenson</h3>
+                <h3 class="text-2xl font-semibold mb-2 text-blue-600 underline">Coach Edward</h3>
                 <p>
-                I'm Edward Stevenson. I began my journey as a martial artist at 5 years old studying Kajukenbo through 
+                I'm Coach Edward. I began my journey as a martial artist at 5 years old studying Kajukenbo through 
                 a local rec center class. Since then, I've trained with over a dozen instructors across many styles. I 
                 finally earned my black belt under Andrew Carrasco in the Kickstart program. Now I'm a certified secondary 
                 math teacher in the state of Texas as well as an instructor for Level Up.
@@ -65,10 +65,10 @@ const Staff = () => {
                 alt="" />
             </picture> 
                 <div class="text-black max-w-xl">
-                <h3 class="text-2xl font-semibold mb-2 text-blue-600 underline">Francine Lisangi-Carrasco</h3>
+                <h3 class="text-2xl font-semibold mb-2 text-blue-600 underline">Coach Francine</h3>
                 <p>M.E.D. Teaching, Leadership, Collaboration, & Curriculum B.S. Early Childhood</p>
                 <p>
-                Hello, I'm Francine and I help coordinate the  Curriculum for the LUMA Sportz Program & I am the Cheer Coach 
+                Hello, I'm Coach Francine and I help coordinate the  Curriculum for the LUMA Sportz Program & I am the Cheer Coach 
                 for Little Pom Poms! I believe Education and the core values of Martial Arts serve as a great combination to 
                 steer our community and the lives of our students in a positive direction. I'm a wife, mother, Educator, 
                 Entrepreneur, and lover of fashion!
@@ -86,9 +86,9 @@ const Staff = () => {
                 alt="" />
             </picture> 
                 <div class="text-black max-w-xl">
-                    <h3 class="text-2xl font-semibold mb-2 text-blue-600 underline">Landon Canizales</h3>
+                    <h3 class="text-2xl font-semibold mb-2 text-blue-600 underline">Coach Landon</h3>
                     <p>
-                    Hi, I’m Landon Canizales. I’m a black belt with over six years of experience in karate. I’m passionate 
+                    Hi, I’m Coach Landon. I’m a black belt with over six years of experience in karate. I’m passionate 
                     about sharing what I’ve learned and helping others grow through martial arts. Karate has taught me discipline, 
                     focus, and confidence, and I’m excited to pass that on to my students
                     </p>
@@ -126,9 +126,9 @@ const Staff = () => {
                 alt="" />
             </picture> 
                 <div class="text-black max-w-xl">
-                    <h3 class="text-2xl font-semibold mb-2 text-blue-600 underline">Grace Ortega-Ruiz</h3>
+                    <h3 class="text-2xl font-semibold mb-2 text-blue-600 underline">Coach Grace</h3>
                     <p>
-                    My name is Grace Ortega-Ruiz, and I’ve been doing karate since I was 11 years old. Over the years, 
+                    My name is Coach Grace, and I’ve been doing karate since I was 11 years old. Over the years, 
                     I’ve competed in many tournaments and earned my black belt through hard work and dedication. Karate 
                     has taught me discipline, confidence, and resilience. Now, I’m excited to step into a new role as a 
                     passionate and enthusiastic karate coach. I’m looking forward to helping others grow and succeed in 

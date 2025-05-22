@@ -10,8 +10,8 @@ const ContactInfo = () => {
             <Phone size={40} className="text-blue-600 mb-4" />
             <h3 className="text-xl font-semibold text-gray-800 mb-2">Call Us</h3>
             <p className="text-gray-600">
-              <a href="tel:1234567890" className="hover:underline">
-                (123) 456-7890
+              <a href="tel:2146809155" className="hover:underline">
+                (214) 680-9155
               </a>
             </p>
           </div>
@@ -26,8 +26,8 @@ const ContactInfo = () => {
             <Mail size={40} className="text-blue-600 mb-4" />
             <h3 className="text-xl font-semibold text-gray-800 mb-2">Email</h3>
             <p className="text-gray-600">
-              <a href="mailto:info@levelupmma.com" className="hover:underline">
-                info@levelupmma.com
+              <a href="mailto:info@sportznfun.com" className="hover:underline">
+                info@sportznfun.com
               </a>
             </p>
           </div>

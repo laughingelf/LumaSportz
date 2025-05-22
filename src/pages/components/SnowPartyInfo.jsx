@@ -19,7 +19,7 @@ const details = [
     icon: <Clock size={40} className="text-blue-500 mb-4" />,
     content: [
       { text: 'Snow Party', bold: true },
-      { text: '1 Hour $299' },
+      { text: '1 Hour $325' },
       { text: '2 Hours $424' },
       { text: '$125 Per Extra Hour' },
       { text: 'Live Character', bold: true },
