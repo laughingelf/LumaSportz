@@ -54,12 +54,12 @@ const PricingSection = () => {
                 <h3 className="text-2xl font-semibold text-blue-600 underline mb-4">{program.title}</h3>
                 <p className="text-gray-800 mb-6 flex-grow">{program.description}</p>
                 <div className="mt-auto">
-                    {/* <a target='_blank'
+                    <a target='_blank'
                     href="https://level-up-mma.gymdesk.com/signup"
-                    className="inline-block bg-blue-600 hover:bg-green-500 text-white shadow-md shadow-gray-500 hover:shadow-lg hover:scale-105 font-semibold py-2 px-6 rounded-full transition"
+                    className="inline-block text-gray-800 text-xl hover:scale-110 hover:text-blue-600 font-semibold py-2 px-6 rounded-full transition"
                     >
-                    {program.button}
-                    </a> */}
+                    <span className='underline'>Enroll Now</span> →
+                    </a>
                 </div>
                 </div>
             ))}

@@ -15,7 +15,7 @@ export default function AboutSection() {
             Basketball, and Soccer. We’re passionate about creating unforgettable experiences—both in class and at our exciting events like foam parties, snow days, 
             and movie nights. Above all, we treat every child and family like our own, ensuring a safe, welcoming, and positive environment where fun and growth go hand in hand.
             </p>
-            <div className="mt-8 flex justify-center gap-4">
+            <div className="mt-8 flex flex-wrap justify-center gap-4">
                 <div className="px-8 w-48 py-3 text-lg bg-blue-600 hover:bg-green-500 shadow-md shadow-gray-500 hover:shadow-lg hover:scale-105 transition font-semibold rounded-full text-white">
                     <Link to="/prices">Learn More</Link>
                 </div>

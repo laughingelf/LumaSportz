@@ -45,6 +45,14 @@ const LocationsPage = () => {
     }
   };
 
+  const getBgColor = (program) => {
+    const p = program.toLowerCase();
+    if (p.includes('little warriors')) return 'bg-green-200';
+    if (p.includes('little pom poms')) return 'bg-pink-200';
+    if (p.includes('little all stars')) return 'bg-orange-200';
+    return 'bg-gray-100'; // fallback
+  };
+
   return (
     <section className="py-16 px-6 bg-gray-50 min-h-screen mt-12">
       <div className="max-w-7xl mx-auto">
@@ -52,10 +60,30 @@ const LocationsPage = () => {
 
         {/* Filter Buttons */}
         <div className="flex flex-wrap justify-center gap-4 mb-10">
-          <button onClick={() => handleFilter('all')} className="bg-blue-600 shadow-md shadow-gray-400 hover:scale-105 hover:shadow-lg px-4 py-2 rounded-full font-medium transition">All</button>
-          <button onClick={() => handleFilter('karate')} className="bg-green-500 shadow-md shadow-gray-400 hover:scale-105 hover:shadow-lg px-4 py-2 rounded-full font-medium transition">Little Warriors (Karate)</button>
-          <button onClick={() => handleFilter('cheer')} className="bg-pink-500 shadow-md hover:scale-105 shadow-md shadow-gray-400 hover:shadow-lg px-4 py-2 rounded-full font-medium transition">Little Pom Poms (Cheerleading)</button>
-          <button onClick={() => handleFilter('sports')} className="bg-yellow-600 shadow-md shadow-gray-400 hover:scale-105 hover:shadow-lg px-4 py-2 rounded-full font-medium transition">Little All Stars (Basketball & Soccer)</button>
+          <button
+            onClick={() => handleFilter('all')}
+            className="bg-blue-600 shadow-md shadow-gray-400 hover:scale-105 hover:shadow-lg px-4 py-2 rounded-full font-medium text-white transition"
+          >
+            All
+          </button>
+          <button
+            onClick={() => handleFilter('karate')}
+            className="bg-green-500 shadow-md shadow-gray-400 hover:scale-105 hover:shadow-lg px-4 py-2 rounded-full font-medium text-white transition"
+          >
+            Little Warriors (Karate)
+          </button>
+          <button
+            onClick={() => handleFilter('cheer')}
+            className="bg-pink-500 shadow-md shadow-gray-400 hover:scale-105 hover:shadow-lg px-4 py-2 rounded-full font-medium text-white transition"
+          >
+            Little Pom Poms (Cheerleading)
+          </button>
+          <button
+            onClick={() => handleFilter('sports')}
+            className="bg-yellow-600 shadow-md shadow-gray-400 hover:scale-105 hover:shadow-lg px-4 py-2 rounded-full font-medium text-white transition"
+          >
+            Little All Stars (Basketball & Soccer)
+          </button>
         </div>
 
         {/* Locations */}
@@ -63,13 +91,12 @@ const LocationsPage = () => {
           {filtered.map((loc, index) => (
             <div
               key={index}
-              className="bg-green-200 shadow-md rounded-2xl p-6 flex flex-col md:flex-row md:items-start md:justify-between gap-6"
+              className={`${getBgColor(loc.Program)} shadow-md rounded-2xl p-6 flex flex-col md:flex-row md:items-start md:justify-between gap-6`}
             >
               {/* Program Info */}
               <div className="flex-1 text-left">
                 <p className="text-lg underline text-gray-500 uppercase font-medium">Program</p>
                 <p className="text-blue-600 font-bold">{loc.Program}</p>
-                {/* <p className="text-sm text-gray-700">Instructor: {loc.Instructor}</p> */}
               </div>
 
               {/* School Location */}
@@ -91,7 +118,7 @@ const LocationsPage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://level-up-mma.gymdesk.com/signup"
-                  className="inline-block bg-blue-600 shadow-md shaow-gray-800 hover:shadow-lg hover:scale-105 text-white font-semibold py-2 px-6 rounded-full transition"
+                  className="inline-block bg-blue-600 shadow-md shadow-gray-800 hover:shadow-lg hover:scale-105 text-white font-semibold py-2 px-6 rounded-full transition"
                 >
                   Enroll Now
                 </a>
