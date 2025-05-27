@@ -63,13 +63,13 @@ const LocationsPage = () => {
           {filtered.map((loc, index) => (
             <div
               key={index}
-              className="bg-white shadow-md rounded-2xl p-6 flex flex-col md:flex-row md:items-start md:justify-between gap-6"
+              className="bg-green-200 shadow-md rounded-2xl p-6 flex flex-col md:flex-row md:items-start md:justify-between gap-6"
             >
               {/* Program Info */}
               <div className="flex-1 text-left">
                 <p className="text-lg underline text-gray-500 uppercase font-medium">Program</p>
                 <p className="text-blue-600 font-bold">{loc.Program}</p>
-                <p className="text-sm text-gray-700">Instructor: {loc.Instructor}</p>
+                {/* <p className="text-sm text-gray-700">Instructor: {loc.Instructor}</p> */}
               </div>
 
               {/* School Location */}
@@ -91,7 +91,7 @@ const LocationsPage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://level-up-mma.gymdesk.com/signup"
-                  className="inline-block bg-blue-600 hover:bg-green-500 text-white font-semibold py-2 px-6 rounded-full transition"
+                  className="inline-block bg-blue-600 shadow-md shaow-gray-800 hover:shadow-lg hover:scale-105 text-white font-semibold py-2 px-6 rounded-full transition"
                 >
                   Enroll Now
                 </a>

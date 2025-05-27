@@ -130,9 +130,9 @@ const FAQSection = () => {
         <h2 className="text-3xl font-bold text-center text-blue-600 mb-10">If you have any further questions, don't hesitate to contact us</h2>
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+            <div key={index} className="bg-green-200 rounded-lg shadow-md overflow-hidden">
               <button
-                className="w-full text-left px-6 py-4 flex justify-between items-center font-medium text-gray-800 hover:bg-gray-50"
+                className="w-full text-left px-6 py-4 flex justify-between items-center font-medium text-gray-800 hover:bg-green-300 transition"
                 onClick={() => toggleFAQ(index)}
               >
                 {faq.question}
