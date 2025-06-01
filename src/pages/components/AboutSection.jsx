@@ -7,10 +7,10 @@ export default function AboutSection() {
           {/* Text Content */}
           <div>
             <h2 className="text-4xl font-bold text-blue-600 mb-4">Who We Are</h2>
-            <p className="text-gray-700 text-lg mb-6">
+            <p className="text-gray-700 text-xl md:text-2xl mb-6">
             Welcome to LUMA Sportz N Fun! We help kids grow in confidence and teamwork through exciting programs and unforgettable events—all in a safe, fun, and family-first environment.
             </p>
-            <p className="text-gray-600">
+            <p className="text-gray-600 text-xl">
             At LUMA Sportz N Fun, our mission is to inspire confidence, teamwork, and joy in every child through high-energy programs in Martial Arts, Cheerleading, 
             Basketball, and Soccer. We’re passionate about creating unforgettable experiences—both in class and at our exciting events like foam parties, snow days, 
             and movie nights. Above all, we treat every child and family like our own, ensuring a safe, welcoming, and positive environment where fun and growth go hand in hand.

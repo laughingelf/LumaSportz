@@ -8,8 +8,8 @@ const ContactInfo = () => {
           {/* Phone */}
           <div className="flex flex-col items-center justify-center h-full">
             <Phone size={40} className="text-blue-600 mb-4" />
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Call Us</h3>
-            <p className="text-gray-600">
+            <h3 className="text-2xl font-semibold text-gray-800 mb-2">Call Us</h3>
+            <p className="text-blue-600 text-xl">
               <a href="tel:2146809155" className="hover:underline">
                 (214) 680-9155
               </a>
@@ -24,8 +24,8 @@ const ContactInfo = () => {
           {/* Email */}
           <div className="flex flex-col items-center justify-center h-full">
             <Mail size={40} className="text-blue-600 mb-4" />
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Email</h3>
-            <p className="text-gray-600">
+            <h3 className="text-2xl font-semibold text-gray-800 mb-2">Email</h3>
+            <p className="text-blue-600 text-xl">
               <a href="mailto:info@sportznfun.com" className="hover:underline">
                 info@sportznfun.com
               </a>

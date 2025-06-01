@@ -71,31 +71,31 @@ const ContactForm = () => {
         </p>
       </SuccessModal>
 
-      <form onSubmit={handleSubmit} name="contact" data-netlify="true" encType="multipart/form-data" className="bg-white mt-12 mb-18 space-y-6 text-blue-600 max-w-[36rem] mx-auto px-4 rounded-lg shadow-lg shadow-gray-500" id="contact-form">
+      <form onSubmit={handleSubmit} name="contact" data-netlify="true" encType="multipart/form-data" className="bg-white mt-12 mb-18 space-y-6 text-blue-600 text-xl max-w-[36rem] mx-auto px-4 rounded-lg shadow-lg shadow-gray-500" id="contact-form">
         <input type="hidden" name="form-name" value="contact" />
 
         <div className="grid md:grid-cols-1 gap-4 mx-8 pt-6 px-4 max-w-[36rem] mx-auto">
           <div>
             <label htmlFor="name" className="block mb-1 font-medium">Name</label>
             <input type="text" id="name" name="name" value={name} onChange={(e) => setName(e.target.value)} required
-              className="w-full px-4 py-2 rounded-md bg-gray-200 shadow-lg shadow-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-600" />
+              className="w-full px-4 py-2 rounded-md bg-gray-200 shadow-lg shadow-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-green-200" />
           </div>
           <div>
             <label htmlFor="email" className="block mb-1 font-medium">Email</label>
             <input type="email" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required
-              className="w-full px-4 py-2 rounded-md bg-gray-200 shadow-lg shadow-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-600" />
+              className="w-full px-4 py-2 rounded-md bg-gray-200 shadow-lg shadow-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-green-200" />
           </div>
           <div>
             <label htmlFor="phone" className="block mb-1 font-medium">Phone Number</label>
             <input type="tel" id="phone" name="phone" value={phone} onChange={(e) => setPhone(e.target.value)} required
-              className="w-full px-4 py-2 rounded-md bg-gray-200 shadow-lg shadow-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-600" />
+              className="w-full px-4 py-2 rounded-md bg-gray-200 shadow-lg shadow-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-green-200" />
           </div>
         </div>
 
         <div>
           <label htmlFor="description" className="block mb-1 font-medium">Ask Us Anything</label>
           <textarea id="description" name="description" rows="4" value={description} onChange={(e) => setDescription(e.target.value)} required
-            className="w-full px-4 py-2 rounded-md max-w-[36rem] bg-gray-200 shadow-lg shadow-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+            className="w-full px-4 py-2 rounded-md max-w-[36rem] bg-gray-200 shadow-lg shadow-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-green-200"></textarea>
         </div>
 
         <div className="text-center">

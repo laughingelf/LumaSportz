@@ -33,11 +33,16 @@ const PricingSection = () => {
       price: '$80/month',
       desc: 'You can cancel at any time. Payments autodrafted on the 1st of each month.',
     },
-    // {
-    //   title: 'Full Year(12 Months)',
-    //   price: '$1,025',
-    //   desc: 'Included Little Warrior start up Kit. Included virtual month in August 2025. Monthly Auto Draft, Full Payment, or Check. No Refunds.',
-    // },
+    {
+      title: 'Private Group Lessons',
+      price: '$70 or $80/Little Warriors',
+      desc: "Little Warriors are ages 3-5 and will be held 9:00am-9:30am. Located at Mr. C's home gym (Garage) in Lewisville. Fully matted, A/C, fans, water, & all training equipment necassry for Traditional Karate & MMA training. Live Stream classes available for all parents as they drop off students",
+    },
+    {
+      title: 'Private Group Lessons',
+      price: '$100/Level Up MMA',
+      desc: "Level Up MMA are ages 6-12 and will be held 9:30am-10:30am. Located at Mr. C's home gym (Garage) in Lewisville. Fully matted, A/C, fans, water, & all training equipment necassry for Traditional Karate & MMA training. Live Stream classes available for all parents as they drop off students",
+    },
   ];
 
   return (
@@ -51,8 +56,8 @@ const PricingSection = () => {
                 key={program.title}
                 className="bg-green-200 rounded-2xl shadow-lg p-6 flex flex-col h-full"
                 >
-                <h3 className="text-2xl font-semibold text-blue-600 underline mb-4">{program.title}</h3>
-                <p className="text-gray-800 mb-6 flex-grow">{program.description}</p>
+                <h3 className="text-2xl md:text-3xl font-semibold text-blue-600 underline mb-4">{program.title}</h3>
+                <p className="text-gray-800 text-md md:text-lg mb-6 flex-grow">{program.description}</p>
                 <div className="mt-auto">
                     <a target='_blank'
                     href="https://level-up-mma.gymdesk.com/signup"

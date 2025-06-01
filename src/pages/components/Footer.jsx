@@ -9,15 +9,15 @@ const Footer = () => {
         {/* Logo and Tagline */}
         <div className="flex flex-col items-center">
           <img src="/img/luma-logo.svg" alt="Luma Sportz N Fun Logo" className="h-48" />
-          <p className="text-sm max-w-xs text-center">
+          <p className="text-lg max-w-xs text-center">
             Empowering kids through fun, fitness, and unforgettable experiences.
           </p>
         </div>
 
         {/* Quick Links */}
         <div>
-          <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-          <ul className="space-y-2">
+          <h3 className="text-2xl font-semibold mb-4">Quick Links</h3>
+          <ul className="space-y-2 text-lg">
             <li><Link to="/" className="hover:underline">Home</Link></li>
             <li><Link to="/about" className="hover:underline">Staff</Link></li>
             <li><Link to="/prices" className="hover:underline">Prices</Link></li>
@@ -27,8 +27,8 @@ const Footer = () => {
 
         {/* Programs */}
         <div>
-          <h3 className="text-lg font-semibold mb-4">Programs</h3>
-          <ul className="space-y-2">
+          <h3 className="text-2xl font-semibold mb-4">Programs</h3>
+          <ul className="space-y-2 text-lg">
             <li><Link to="/foam-parties" className="hover:underline">Foam Parties</Link></li>
             <li><Link to="/movie-snow-parties" className="hover:underline">Movie/Snow Parties</Link></li>
             <li><Link to="/faq" className="hover:underline">FAQ</Link></li>
@@ -38,10 +38,10 @@ const Footer = () => {
 
         {/* Contact Info & Socials */}
         <div className="flex flex-col items-center md:items-start">
-          <h3 className="text-lg font-semibold mb-4">Get in Touch</h3>
-          <p className="text-sm">Email: <a href="mailto:info@sportznfun.com" className="underline">info@sportznfun.com</a></p>
-          <p className="text-sm mt-2">Phone: <a href="tel:+2146809155" className="underline">(214) 680-9155</a></p>
-          <p className="text-sm mt-2">Follow us on social media:</p>
+          <h3 className="text-2xl font-semibold mb-4">Get in Touch</h3>
+          <p className="text-lg">Email: <a href="mailto:info@sportznfun.com" className="underline">info@sportznfun.com</a></p>
+          <p className="text-lg mt-2">Phone: <a href="tel:+2146809155" className="underline">(214) 680-9155</a></p>
+          <p className="text-lg mt-2">Follow us on social media:</p>
           <div className="flex space-x-4 mt-2 justify-center md:justify-start">
             <a
               href="https://www.facebook.com/LUMASportzNFun"
@@ -49,7 +49,7 @@ const Footer = () => {
               aria-label="Facebook"
               className="text-2xl transition-transform duration-300 hover:rotate-12 hover:scale-125 hover:text-gray-200"
             >
-              <Facebook className="w-6 h-6" />
+              <Facebook className="w-8 h-8" />
             </a>
             <a
               href="https://www.instagram.com/lumasportznfun/"
@@ -57,7 +57,7 @@ const Footer = () => {
               aria-label="Instagram"
               className="text-2xl transition-transform duration-300 hover:rotate-12 hover:scale-125 hover:text-gray-200"
             >
-              <Instagram className="w-6 h-6" />
+              <Instagram className="w-8 h-8" />
             </a>
             <a
               href="#"
@@ -65,7 +65,7 @@ const Footer = () => {
               aria-label="TikTok"
               className="text-2xl transition-transform duration-300 hover:rotate-12 hover:scale-125 hover:text-gray-200"
             >
-              <Music2 className="w-6 h-6" />
+              <Music2 className="w-8 h-8" />
             </a>
           </div>
 

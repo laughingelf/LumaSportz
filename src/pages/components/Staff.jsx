@@ -10,7 +10,7 @@ const Staff = () => {
         <>
         
             
-        <section class="max-w-6xl mx-auto mt-24 mb-16 px-6 py-0 space-y-12">
+        <section class="max-w-6xl mx-auto mt-24 mb-16 px-6 py-0 space-y-12 text-md md:text-lg">
             {/* <!-- Profile 1 --> */}
             <div class="flex flex-col md:flex-row items-center gap-8">
             <picture>
@@ -20,7 +20,7 @@ const Staff = () => {
                 src="/img/andrew.avif" alt="" />
             </picture> 
                 <div class="text-black max-w-xl">
-                <h3 class="text-2xl font-semibold mb-2 text-blue-600 underline">Mr. C</h3>
+                <h3 class="text-3xl font-semibold mb-2 text-blue-600 underline">Mr. C</h3>
                 <p>
                 I am Mr. Carrasco, aka “Mr. C”! I am the Owner of LUMA Sportz N Fun & Chief Instructor for 
                 Little Warriors. I have been studying Martial Arts for 37 years & a 7th degree Black Belt. 
@@ -45,7 +45,7 @@ const Staff = () => {
                 alt="" />
             </picture> 
                 <div class="text-black max-w-xl">
-                <h3 class="text-2xl font-semibold mb-2 text-blue-600 underline">Coach Edward</h3>
+                <h3 class="text-3xl font-semibold mb-2 text-blue-600 underline">Coach Edward</h3>
                 <p>
                 I'm Coach Edward. I began my journey as a martial artist at 5 years old studying Kajukenbo through 
                 a local rec center class. Since then, I've trained with over a dozen instructors across many styles. I 
@@ -65,7 +65,7 @@ const Staff = () => {
                 alt="" />
             </picture> 
                 <div class="text-black max-w-xl">
-                <h3 class="text-2xl font-semibold mb-2 text-blue-600 underline">Coach Francine</h3>
+                <h3 class="text-3xl font-semibold mb-2 text-blue-600 underline">Coach Francine</h3>
                 <p>M.E.D. Teaching, Leadership, Collaboration, & Curriculum B.S. Early Childhood</p>
                 <p>
                 Hello, I'm Coach Francine and I help coordinate the  Curriculum for the LUMA Sportz Program & I am the Cheer Coach 
@@ -77,7 +77,7 @@ const Staff = () => {
             </div>
 
             {/* <!-- Profile 4 --> */}
-            <div class="flex flex-col md:flex-row-reverse items-center gap-8 mb-24">
+            <div class="flex flex-col md:flex-row-reverse items-center gap-8 ">
             <picture>
                 {/* <source srcSet="/img/more.webp" type="image/webp" />
                 <source srcSet="/img/more.png" type="image/jpeg" /> */}
@@ -86,7 +86,7 @@ const Staff = () => {
                 alt="" />
             </picture> 
                 <div class="text-black max-w-xl">
-                    <h3 class="text-2xl font-semibold mb-2 text-blue-600 underline">Coach Landon</h3>
+                    <h3 class="text-3xl font-semibold mb-2 text-blue-600 underline">Coach Landon</h3>
                     <p>
                     Hi, I’m Coach Landon. I’m a black belt with over six years of experience in karate. I’m passionate 
                     about sharing what I’ve learned and helping others grow through martial arts. Karate has taught me discipline, 
@@ -105,7 +105,7 @@ const Staff = () => {
                 alt="" />
             </picture> 
                 <div class="text-black max-w-xl">
-                <h3 class="text-2xl font-semibold mb-2 text-blue-600 underline">Coach Sydney</h3>
+                <h3 class="text-3xl font-semibold mb-2 text-blue-600 underline">Coach Sydney</h3>
                 <p>
                 Hi, I’m Coach Sydney! I’m 25 years old and from Tulsa, OK. I started cheering in middle school and became 
                 a cheer trainer in high school, which sparked my passion for coaching young athletes. I love working with 
@@ -117,7 +117,7 @@ const Staff = () => {
 
 
              {/* <!-- Profile 6 --> */}
-             <div class="flex flex-col md:flex-row-reverse items-center gap-8 mb-24">
+             <div class="flex flex-col md:flex-row-reverse items-center gap-8">
             <picture>
                 {/* <source srcSet="/img/more.webp" type="image/webp" />
                 <source srcSet="/img/more.png" type="image/jpeg" /> */}
@@ -126,7 +126,7 @@ const Staff = () => {
                 alt="" />
             </picture> 
                 <div class="text-black max-w-xl">
-                    <h3 class="text-2xl font-semibold mb-2 text-blue-600 underline">Coach Grace</h3>
+                    <h3 class="text-3xl font-semibold mb-2 text-blue-600 underline">Coach Grace</h3>
                     <p>
                     My name is Coach Grace, and I’ve been doing karate since I was 11 years old. Over the years, 
                     I’ve competed in many tournaments and earned my black belt through hard work and dedication. Karate 
@@ -147,7 +147,7 @@ const Staff = () => {
                 alt="" />
             </picture> 
                 <div class="text-black max-w-xl">
-                <h3 class="text-2xl font-semibold mb-2 text-blue-600 underline">Coach Benji</h3>
+                <h3 class="text-3xl font-semibold mb-2 text-blue-600 underline">Coach Benji</h3>
                 <p>
                 I am Benjamin Aka “Coach Benji” for The Little All Stars. I have a great Love for sports. I played Football 
                 And Basketball early In my childhood & teen years. It shaped me when I was young with discipline, courage 

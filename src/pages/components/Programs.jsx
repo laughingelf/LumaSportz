@@ -60,8 +60,8 @@ export default function ProgramsSection() {
                   className="h-48 w-full object-fit mt-4"
                 />
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-2xl font-semibold mb-2 text-black">{program.title}</h3>
-                  <p className="text-gray-700 flex-grow">{program.description}</p>
+                  <h3 className="text-3xl font-semibold mb-2 text-black">{program.title}</h3>
+                  <p className="text-gray-700 text-lg md:text-xl flex-grow">{program.description}</p>
                   <Link
                     to={program.link}
                     className="mt-4 inline-flex items-center text-blue-600 font-semibold group text-lg"
