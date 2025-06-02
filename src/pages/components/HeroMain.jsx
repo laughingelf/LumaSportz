@@ -48,12 +48,14 @@ export default function HeroMain() {
         <div className="absolute bottom-4 w-full flex flex-col items-center z-10 px-6">
           <div className="flex flex-col sm:flex-row gap-4 text-center mb-6">
             <a
+            target="_blank"
               href="https://level-up-mma.gymdesk.com/signup"
               className="px-8 w-48 py-3 text-lg bg-blue-600 hover:bg-green-500 transition font-semibold rounded-full shadow-md shadow-gray-500 hover:shadow-lg hover:scale-105 text-white transition"
             >
               Sign Up
             </a>
             <a
+            target="_blank"
               href="https://level-up-mma.gymdesk.com/login"
               className="px-8 w-48 py-3 text-lg bg-blue-600 text-white hover:text-white hover:bg-green-500 transition font-semibold rounded-full shadow-md shadow-gray-500 hover:shadow-lg hover:scale-105 text-white transition"
             >
