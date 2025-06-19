@@ -10,12 +10,10 @@ const LandingPage = () => {
 
     return (
         <>
-        <Navbar/>
         <HeroMain/>
         <BoomCard/>
         <AboutSection/>
         <ProgramsSection/>
-        <Footer/>
         </>
     )
 }

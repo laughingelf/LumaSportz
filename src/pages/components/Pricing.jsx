@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const PricingSection = () => {
   const programs = [
@@ -46,24 +47,33 @@ const PricingSection = () => {
     <section className="py-16 text-center mt-8 bg-gray-50">
       {/* Top Program Cards */}
       <div className="max-w-7xl mx-auto px-6 mb-12">
-        <h2 className="text-4xl font-bold text-blue-600 mb-10 underline">Our Programs</h2>
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="text-4xl font-bold text-blue-600 mb-10 underline"
+        >
+          Our Programs
+        </motion.h2>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {programs.map((program) => {
-            let bgColor = '';
-            if (program.title === 'Little Warriors') {
-              bgColor = 'bg-green-200';
-            } else if (program.title === 'Little All Stars') {
-              bgColor = 'bg-orange-200';
-            } else if (program.title === 'Little Pom Poms') {
-              bgColor = 'bg-pink-200';
-            } else {
-              bgColor = 'bg-gray-200'; // Fallback
-            }
+          {programs.map((program, index) => {
+            const bgColor =
+              program.title === 'Little Warriors'
+                ? 'bg-green-200'
+                : program.title === 'Little All Stars'
+                ? 'bg-orange-200'
+                : 'bg-pink-200';
 
             return (
-              <div
+              <motion.div
                 key={program.title}
                 className={`${bgColor} rounded-2xl shadow-lg p-6 flex flex-col h-full`}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                viewport={{ once: true }}
               >
                 <h3 className="text-2xl md:text-3xl font-semibold text-blue-600 underline mb-4">
                   {program.title}
@@ -71,26 +81,39 @@ const PricingSection = () => {
                 <p className="text-gray-800 text-md md:text-lg mb-6 flex-grow">
                   {program.description}
                 </p>
-                <div className="mt-auto">
-                  <a
-                    target="_blank"
-                    href="https://level-up-mma.gymdesk.com/signup"
-                    className="inline-block text-gray-800 text-xl hover:scale-110 hover:text-blue-600 font-semibold py-2 px-6 rounded-full transition"
-                  >
-                    <span className="underline">Enroll Now</span> →
-                  </a>
-                </div>
-              </div>
+                <motion.a
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ type: 'spring', stiffness: 300 }}
+                  target="_blank"
+                  href="https://level-up-mma.gymdesk.com/signup"
+                  className="mt-auto inline-block text-gray-800 text-xl font-semibold py-2 px-6 rounded-full transition"
+                >
+                  <span className="underline">Enroll Now</span> →
+                </motion.a>
+              </motion.div>
             );
           })}
         </div>
       </div>
 
       {/* Banner */}
-      <div className="bg-yellow-400 py-6 text-4xl font-bold text-gray-800 mb-4 shadow-md">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="bg-yellow-400 py-6 text-4xl font-bold text-gray-800 mb-4 shadow-md"
+      >
         No Sign-Up Fee!
-      </div>
-      <div className="text-black text-3xl mb-12">
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="text-black text-3xl mb-12"
+      >
         <p>
           Please use{' '}
           <span className="font-semibold underline text-blue-600">Students Name</span> and{' '}
@@ -106,33 +129,47 @@ const PricingSection = () => {
             Watch this video
           </a>
         </p>
-      </div>
+      </motion.div>
 
       {/* Pricing Options */}
       <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 text-left mb-12">
-        {pricingOptions.map((plan) => (
-          <div key={plan.title} className="bg-white rounded-2xl shadow-md p-6">
+        {pricingOptions.map((plan, index) => (
+          <motion.div
+            key={index}
+            className="bg-white rounded-2xl shadow-md p-6"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            viewport={{ once: true }}
+          >
             <h4 className="text-xl font-bold text-gray-800 mb-2">{plan.title}</h4>
             <p className="text-blue-600 text-2xl font-semibold mb-4">{plan.price}</p>
             <p className="text-gray-600 mb-6">{plan.desc}</p>
-            <a
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: 'spring', stiffness: 300 }}
               target="_blank"
               href="https://level-up-mma.gymdesk.com/signup"
-              className="inline-block bg-blue-600 hover:bg-green-500 shadow-md shadow-gray-500 hover:shadow-lg hover:scale-105 text-white font-semibold py-2 px-6 rounded-full transition"
+              className="inline-block bg-blue-600 hover:bg-green-500 shadow-md shadow-gray-500 hover:shadow-lg text-white font-semibold py-2 px-6 rounded-full transition"
             >
               Get Started →
-            </a>
-          </div>
+            </motion.a>
+          </motion.div>
         ))}
       </div>
 
       {/* Final CTA */}
-      <Link
-        to="/contact"
-        className="inline-block bg-green-500 hover:bg-blue-600 text-white font-bold shadow-md shadow-gray-500 hover:shadow-lg hover:scale-105 py-3 px-8 rounded-full transition shadow-lg"
+      <motion.div
+        whileHover={{ scale: 1.05 }}
+        transition={{ type: 'spring', stiffness: 300 }}
       >
-        Contact Us to Join!
-      </Link>
+        <Link
+          to="/contact"
+          className="inline-block bg-green-500 hover:bg-blue-600 text-white font-bold shadow-md shadow-gray-500 hover:shadow-lg py-3 px-8 rounded-full transition"
+        >
+          Contact Us to Join!
+        </Link>
+      </motion.div>
     </section>
   );
 };

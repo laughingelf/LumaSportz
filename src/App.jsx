@@ -10,6 +10,8 @@ import Prices from './pages/Prices'
 import Locations from './pages/Locations'
 import './App.css'
 import ScrollToTop from './pages/components/ScrollToTop'
+import Navbar from './pages/components/Navbar'
+import Footer from './pages/components/Footer'
 
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
 
       <BrowserRouter>
         <ScrollToTop/>
+        <Navbar />
         <Routes>
           <Route index element={<LandingPage/>} />
           <Route path='/home' element={<LandingPage/>} />
@@ -33,6 +36,7 @@ function App() {
           <Route path='/locations' element={<Locations/>} />
           <Route path='*' element={<NoPage/>} />
         </Routes>
+        <Footer />
       </BrowserRouter>
 
     </div>

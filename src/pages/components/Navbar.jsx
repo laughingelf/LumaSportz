@@ -1,62 +1,89 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom'; // or 'next/link' for Next.js
+import { Link } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
+
+const navVariants = {
+  hidden: { y: -100, opacity: 0 },
+  visible: { y: 0, opacity: 1, transition: { duration: 0.5, ease: 'easeOut' } },
+};
+
+const linkHover = {
+  scale: 1.1,
+  transition: { type: 'spring', stiffness: 300 },
+};
+
+const buttonHover = {
+  scale: 1.05,
+  boxShadow: '0px 4px 15px rgba(0, 0, 0, 0.2)',
+  transition: { type: 'spring', stiffness: 300 },
+};
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const navLinks = [
+    ['Home', '/'],
+    ['Staff', '/about'],
+    ['Prices', '/prices'],
+    ['Locations', '/locations'],
+    ['Foam Parties', '/foam-parties'],
+    ['Movie/Snow Parties', '/movie-snow-parties'],
+    ['FAQ', '/faq'],
+    ['Contact', '/contact'],
+  ];
+
   return (
-    <nav className="fixed top-0 left-0 w-full h-16 bg-white z-50 shadow">
+    <motion.nav
+      variants={navVariants}
+      initial="hidden"
+      animate="visible"
+      className="fixed top-0 left-0 w-full h-16 bg-white z-50 shadow"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-          <Link to="/" className="block">
-            <img
+            <Link to="/" className="block">
+              <img
                 src="/img/luma-logo.svg"
                 alt="Luma Sportz N Fun Logo"
                 className="h-38 w-auto"
-            />
+              />
             </Link>
           </div>
 
           {/* Center Nav Links */}
           <div className="hidden md:flex space-x-6 mx-auto">
-            {[
-              ['Home', '/'],
-              ['Staff', '/about'],
-              ['Prices', '/prices'],
-              ['Locations', '/locations'],
-              ['Foam Parties', '/foam-parties'],
-              ['Movie/Snow Parties', '/movie-snow-parties'],
-              ['FAQ', '/faq'],
-              ['Contact', '/contact'],
-            ].map(([label, path]) => (
-              <Link
-                key={label}
-                to={path}
-                className="text-gray-700 hover:text-blue-600 font-medium text-md"
-              >
-                {label}
-              </Link>
+            {navLinks.map(([label, path]) => (
+              <motion.div key={label} whileHover={linkHover}>
+                <Link
+                  to={path}
+                  className="text-gray-700 hover:text-blue-600 font-medium text-md"
+                >
+                  {label}
+                </Link>
+              </motion.div>
             ))}
           </div>
 
           {/* Right Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <a
-              target='_blank'
-              href='https://level-up-mma.gymdesk.com/signup'
-              className="px-4 py-2 bg-blue-600 text-white rounded-md text-md font-semibold hover:bg-green-500 shadow-md shadow-gray-500 hover:shadow-lg hover:scale-105 transition"
+            <motion.a
+              whileHover={buttonHover}
+              target="_blank"
+              href="https://level-up-mma.gymdesk.com/signup"
+              className="px-4 py-2 bg-blue-600 text-white rounded-md text-md font-semibold shadow-md"
             >
               Sign Up
-            </a>
-            <a
-              target='_blank'
-              href='https://level-up-mma.gymdesk.com/login'
-              className="px-4 py-2 border-2 border-blue-600 text-blue-600 rounded-md text-md font-semibold hover:bg-green-500 shadow-gray-500 hover:shadow-lg hover:scale-105 hover:text-white transition"
+            </motion.a>
+            <motion.a
+              whileHover={buttonHover}
+              target="_blank"
+              href="https://level-up-mma.gymdesk.com/login"
+              className="px-4 py-2 border-2 border-blue-600 text-blue-600 rounded-md text-md font-semibold"
             >
               Login
-            </a>
+            </motion.a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -80,33 +107,31 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden bg-white shadow-lg">
-          <div className="px-4 pt-2 pb-4 space-y-2">
-            {[
-              ['Home', '/'],
-              ['Staff', '/about'],
-              ['Prices', '/prices'],
-              ['Locations', '/locations'],
-              ['Foam Parties', '/foam-parties'],
-              ['Movie/Snow Parties', '/movie-snow-parties'],
-              ['FAQ', '/faq'],
-              ['Contact', '/contact'],
-            //   ['Sign Up', '/'],
-            //   ['Login', '/'],
-            ].map(([label, path]) => (
-              <Link
-                key={label}
-                to={path}
-                className="block text-gray-700 hover:text-red-600 font-medium text-base"
-              >
-                {label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      )}
-    </nav>
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            key="mobile-menu"
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            className="md:hidden bg-white shadow-lg overflow-hidden"
+          >
+            <div className="px-4 pt-2 pb-4 space-y-2">
+              {navLinks.map(([label, path]) => (
+                <motion.div key={label} whileHover={linkHover}>
+                  <Link
+                    to={path}
+                    className="block text-gray-700 hover:text-red-600 font-medium text-base"
+                  >
+                    {label}
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.nav>
   );
 };
 
