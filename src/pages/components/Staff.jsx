@@ -87,7 +87,7 @@ perseverance, teamwork, and self-belief.`,
 
 const Staff = () => {
   return (
-    <section className="max-w-6xl mx-auto mt-24 mb-16 px-6 space-y-12 text-md md:text-lg">
+    <section className="max-w-6xl mx-auto mt-24 mb-16 px-6 space-y-12 text-md md:text-lg overflow-x-hidden">
       {staffProfiles.map((staff, idx) => (
         <motion.div
           key={idx}
@@ -110,7 +110,7 @@ const Staff = () => {
           <div className="text-black max-w-xl">
             <h3 className="text-3xl font-semibold mb-2 text-blue-600 underline">{staff.name}</h3>
             {staff.title && <p className="font-semibold mb-2">{staff.title}</p>}
-            <p>{staff.bio}</p>
+            <p className="break-words">{staff.bio}</p>
           </div>
         </motion.div>
       ))}
