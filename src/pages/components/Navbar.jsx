@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -20,6 +20,7 @@ const buttonHover = {
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef();
 
   const navLinks = [
     ['Home', '/'],
@@ -31,6 +32,23 @@ const Navbar = () => {
     ['FAQ', '/faq'],
     ['Contact', '/contact'],
   ];
+
+  // Close mobile menu on outside click
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (menuRef.current && !menuRef.current.contains(e.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [isOpen]);
 
   return (
     <motion.nav
@@ -44,11 +62,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="block">
-              <img
-                src="/img/luma-logo.svg"
-                alt="Luma Sportz N Fun Logo"
-                className="h-38 w-auto"
-              />
+              <img src="/img/luma-logo.svg" alt="Luma Sportz N Fun Logo" className="h-38 w-auto" />
             </Link>
           </div>
 
@@ -111,6 +125,7 @@ const Navbar = () => {
         {isOpen && (
           <motion.div
             key="mobile-menu"
+            ref={menuRef}
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
@@ -121,6 +136,7 @@ const Navbar = () => {
                 <motion.div key={label} whileHover={linkHover}>
                   <Link
                     to={path}
+                    onClick={() => setIsOpen(false)}
                     className="block text-gray-700 hover:text-red-600 font-medium text-base"
                   >
                     {label}
