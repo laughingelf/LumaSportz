@@ -1,0 +1,17 @@
+# Allow all robots complete access to public site content
+User-agent: *
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /uploads/
+Disallow: /temp/
+Disallow: /private/
+Disallow: /cgi-bin/
+
+# Prevent indexing of search or filter URLs if applicable
+Disallow: /*?*
+
+# Optional: Delay crawl rate if server load becomes an issue
+# Crawl-delay: 10
+
+# Link to your XML sitemap
+Sitemap: https://lumasportznfun.com/sitemap.xml
