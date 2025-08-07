@@ -85,7 +85,7 @@ const Footer = () => {
             {[
               { href: "https://www.facebook.com/LUMASportzNFun", icon: <Facebook className="w-8 h-8" />, label: "Facebook" },
               { href: "https://www.instagram.com/lumasportznfun/", icon: <Instagram className="w-8 h-8" />, label: "Instagram" },
-              { href: "#", icon: <Music2 className="w-8 h-8" />, label: "TikTok" },
+              { href: "https://www.tiktok.com/@luma.sportz.n.fun", icon: <Music2 className="w-8 h-8" />, label: "TikTok" },
             ].map((social, idx) => (
               <motion.a
                 key={idx}

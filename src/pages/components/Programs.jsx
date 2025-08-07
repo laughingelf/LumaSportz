@@ -67,7 +67,7 @@ export default function ProgramsSection() {
             Our Little Warriors program is for ages 3 & up. Little Allstars & Little Pom Poms are available for children ages 2 & up!
           </p>
           <p className="text-gray-800 max-w-3xl text-lg text-center">
-            In person class from August 12th - August 1st, 2025. Our virtual month is from August 2nd - 24th, 2025
+            In person class from September 2nd 2025 - July 31st, 2026. Our virtual month is from August 1st 2026 - August 22nd, 2026
           </p>
         </motion.div>
 
