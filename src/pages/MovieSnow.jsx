@@ -16,7 +16,7 @@ const MovieSnow = () => {
             subtitle="Bring the joy of snowfall and the magic of the big screen to your next event — perfect for schools, neighborhoods, or family fun under the stars!"
             primaryCta={{ label: 'Contact Us', to: '/contact' }}
             secondaryCta={{ label: "FAQ", to: '/faq' }}
-            bgImage="luma-foamparty"
+            bgImage="LumaBanner"
         />s
         <SnowPartyInfo/>
         <SnowImgSection/>

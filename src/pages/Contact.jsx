@@ -15,7 +15,7 @@ const Contact = () => {
             subtitle="We’re here to support young athletes every step of the way. Whether you’ve got questions or want to get your child involved, we’d love to hear from you."
             // primaryCta={{ label: 'Contact Us', to: '/contact' }}
             // secondaryCta={{ label: "Programs", to: '/prices' }}
-            bgImage="luma-hero"
+            bgImage="LumaBanner"
         />
         <ContactInfo/>
         <ContactForm/>

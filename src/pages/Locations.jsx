@@ -14,7 +14,7 @@ const Locations = () => {
             subtitle="Discover nearby locations offering Karate, Basketball, and Cheerleading programs. Easily enroll at the location that works best for you!"
             primaryCta={{ label: 'Contact Us', to: '/contact' }}
             secondaryCta={{ label: "Programs", to: '/prices' }}
-            bgImage="luma-hero"
+            bgImage="LumaBanner"
         />
         <LocationsPage/>
         

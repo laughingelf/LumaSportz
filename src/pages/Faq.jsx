@@ -14,7 +14,7 @@ const Faq = () => {
             subtitle="Got questions? We've got answers! Whether you're booking a foam party or joining a sports program, we’re here to help make your experience fun and stress-free."
             primaryCta={{ label: 'Contact Us', to: '/contact' }}
             secondaryCta={{ label: "Programs", to: '/prices' }}
-            bgImage="luma-hero"
+            bgImage="LumaBanner"
         />
         <FAQSection/>
     

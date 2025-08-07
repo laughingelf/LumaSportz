@@ -13,8 +13,10 @@ const Prices = () => {
         subtitle="Affordable, flexible plans for every child and every family. No hidden fees—just pure fun!"
         primaryCta={{ label: 'Contact Us', to: '/contact' }}
         secondaryCta={{ label: "FAQ's", to: '/faq' }}
-        bgImage="luma-hero"
+        bgImage="LumaBanner"
+        fileType="jpg"
       />
+
       <PricingSection/>
       
       

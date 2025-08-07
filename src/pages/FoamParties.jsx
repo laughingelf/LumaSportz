@@ -14,7 +14,7 @@ const FoamParties = () => {
                 subtitle="Make your next event unforgettable with Luma SportznFun’s high-energy foam party experience! Perfect for birthdays, school events, summer camps, and more — safe, exciting, and 100% kid-approved."
                 primaryCta={{ label: 'Contact Us', to: '/contact' }}
                 secondaryCta={{ label: "FAQ", to: '/faq' }}
-                bgImage="luma-foamparty"
+                bgImage="LumaBanner"
             />
             <FoamPartyPackages/>
             <FoamPartyGallery/>
