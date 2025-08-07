@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function HeroMain() {
   return (
-    <section className="bg-black w-full overflow-hidden mt-8 flex flex-col items-center">
+    <section className="bg-white w-full overflow-hidden mt-8 flex flex-col items-center">
       {/* Hero image with aspect ratio preserved */}
       <div className="relative w-full max-w-[2659px] aspect-[2659/984]">
         <img
