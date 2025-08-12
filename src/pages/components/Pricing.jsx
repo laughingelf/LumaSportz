@@ -7,16 +7,41 @@ const PricingSection = () => {
       title: 'Little Warriors',
       description:
         'Our Little Warriors Karate program goes beyond kicks and punches—instilling lifelong values like respect, discipline, confidence, and leadership. Through martial arts, kids build strong character and a positive mindset for success on and off the mat.',
+      features: [
+        'Earn two belts per year!',
+        'Parents & students can compete in a real karate tournament together!',
+        'Lots of parent involvement and events!',
+        'Learn self-defense, discipline, and respect!',
+        'Break a board and learn nunchucks!',
+      ],
     },
     {
       title: 'Little All Stars',
       description:
         'Kickstart your child’s journey in youth sports with our beginner-friendly Soccer and Basketball program—designed to build confidence, coordination, and teamwork through fun, skill-based activities.',
+      features: [
+        'Learn basic soccer & basketball skills.',
+        'Learn fundamentals for each sport.',
+        'Fun activities with their teammates.',
+        'Parent participation at events!',
+        'Challenges with prizes & skill showcase.',
+        "Merch store filled with jerseys & gear.",
+        'Soccer & Basketball seasons rotate every 3 months!',
+      ],
     },
     {
       title: 'Little Pom Poms',
       description:
         'Spark school spirit and self-confidence with our beginner Cheerleading program—perfect for kids to learn basic stunts, teamwork, and performance skills in a fun, encouraging environment.',
+      features: [
+        'Learn basic cheerleading skills!',
+        'Learn basic pom pom routines!',
+        'Simple jumps, rolls, & high kicks!',
+        'Fun activities with their cheer squad!',
+        'Basic stunts with parents!',
+        'Cheer Camp during the Spring Session!',
+        'Merch store filled with cuteness!',
+      ],
     },
   ];
 
@@ -24,7 +49,7 @@ const PricingSection = () => {
     {
       title: 'Monthly Contract',
       price: '$70/month',
-      desc: 'Payments autodrafted on the 1st of each month. Contact starts upon date of sign up & ends August 24, 2025. Cancellations are allowed upon approval by both parties. $70 Cancellation Fee applied.',
+      desc: 'Payments autodrafted on the 1st of each month. Contact starts upon date of sign up & ends August 24, 2026. Cancellations are allowed upon approval by both parties. $70 Cancellation Fee applied.',
     },
     {
       title: 'Month to Month (Cancel Anytime)',
@@ -78,9 +103,20 @@ const PricingSection = () => {
                 <h3 className="text-2xl md:text-3xl font-semibold text-blue-600 underline mb-4">
                   {program.title}
                 </h3>
-                <p className="text-gray-800 text-md md:text-lg mb-6 flex-grow">
+
+                <p className="text-gray-800 text-md md:text-lg mb-4">
                   {program.description}
                 </p>
+
+                {/* Features */}
+                {program.features?.length > 0 && (
+                  <ul className="text-left text-gray-800 text-sm md:text-base space-y-2 mb-6 list-disc pl-5">
+                    {program.features.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+                )}
+
                 <motion.a
                   whileHover={{ scale: 1.05 }}
                   transition={{ type: 'spring', stiffness: 300 }}
@@ -122,9 +158,10 @@ const PricingSection = () => {
         <p>
           Need help registering?{' '}
           <a
-            href="https://www.youtube.com/shorts/NWB2oO-suWU"
+            href="https://youtube.com/shorts/V1BCV2KKJSs?si=ujQgF19tyQOGH43_"
             target="_blank"
             className="underline text-green-500"
+            rel="noreferrer"
           >
             Watch this video
           </a>
@@ -159,10 +196,7 @@ const PricingSection = () => {
       </div>
 
       {/* Final CTA */}
-      <motion.div
-        whileHover={{ scale: 1.05 }}
-        transition={{ type: 'spring', stiffness: 300 }}
-      >
+      <motion.div whileHover={{ scale: 1.05 }} transition={{ type: 'spring', stiffness: 300 }}>
         <Link
           to="/contact"
           className="inline-block bg-green-500 hover:bg-blue-600 text-white font-bold shadow-md shadow-gray-500 hover:shadow-lg py-3 px-8 rounded-full transition"

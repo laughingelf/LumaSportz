@@ -51,7 +51,7 @@ export default function HeroMain() {
           <p>
             Need help registering?{' '}
             <a
-              href="https://www.youtube.com/shorts/NWB2oO-suWU"
+              href="https://youtube.com/shorts/V1BCV2KKJSs?si=ujQgF19tyQOGH43_"
               target="_blank"
               className="underline text-green-500"
               rel="noopener noreferrer"
