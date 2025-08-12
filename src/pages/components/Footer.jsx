@@ -16,8 +16,10 @@ const columnVariants = {
 };
 
 const Footer = () => {
+  const year = new Date().getFullYear();
+
   return (
-    <footer className="bg-blue-300 text-gray-800 py-10">
+    <footer className="bg-blue-300 text-gray-800 py-10" role="contentinfo">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
         {/* Logo and Tagline */}
         <motion.div
@@ -78,8 +80,12 @@ const Footer = () => {
           className="flex flex-col items-center md:items-start"
         >
           <h3 className="text-2xl font-semibold mb-4">Get in Touch</h3>
-          <p className="text-lg">Email: <a href="mailto:info@sportznfun.com" className="underline">info@sportznfun.com</a></p>
-          <p className="text-lg mt-2">Phone: <a href="tel:+2146809155" className="underline">(214) 680-9155</a></p>
+          <p className="text-lg">
+            Email: <a href="mailto:info@sportznfun.com" className="underline">info@sportznfun.com</a>
+          </p>
+          <p className="text-lg mt-2">
+            Phone: <a href="tel:+12146809155" className="underline">(214) 680-9155</a>
+          </p>
           <p className="text-lg mt-2">Follow us on social media:</p>
           <div className="flex space-x-4 mt-2 justify-center md:justify-start">
             {[
@@ -91,6 +97,7 @@ const Footer = () => {
                 key={idx}
                 href={social.href}
                 target="_blank"
+                rel="noopener noreferrer"
                 aria-label={social.label}
                 className="text-2xl hover:text-gray-200 transition-transform duration-300 hover:rotate-12 hover:scale-125"
                 animate={{ y: [0, -2, 0, 2, 0] }}
@@ -103,6 +110,7 @@ const Footer = () => {
         </motion.div>
       </div>
 
+      {/* Bottom Line with GhostStack credit */}
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -110,7 +118,18 @@ const Footer = () => {
         viewport={{ once: true }}
         className="mt-10 text-center text-sm text-gray-800"
       >
-        © {new Date().getFullYear()} Luma Sportz N Fun. All rights reserved.
+        © {year} Luma Sportz N Fun. All rights reserved.
+        <span className="mx-2">•</span>
+        <a
+          href="https://ghoststackdesigns.com"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+          className="underline underline-offset-2 hover:text-gray-900"
+          aria-label="GhostStack Designs website"
+          title="GhostStack Designs"
+        >
+          Site by GhostStack Designs
+        </a>
       </motion.div>
     </footer>
   );
