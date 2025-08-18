@@ -3,34 +3,53 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const faqs = [
   {
+    question: "How long are classes and how often will you teach my child?",
+    answer:
+      "Classes are held once a week and run for 30 minutes each session.",
+  },
+  {
+    question: "How do we sign up our child and how do we pay?",
+    answer:
+      "Our program is a private, parent-pay program, meaning parents register and pay us directly. Consider us a partnered vendor with your child’s school. You’ll sign up through our GYMDESK Parent Portal, where you can also set up and manage your payments.",
+  },
+  {
+    question: "I want my child to participate in all three programs. How do I sign them up?",
+    answer: [
+      "If your school offers all of our sport programs, you are welcome to sign up for all three!",
+      "Please note:",
+      "* Each sport has its own membership.",
+      "* Our coaches specialize in their specific program.",
+      "* If your school does not offer one of our programs, registration for that sport will not be available."
+    ]
+  },
+  {
+    question: "Are your coaches background checked and approved to be at our school?",
+    answer: [
+      "Yes! All LUMA Sportz N Fun Coaches are:",
+      "* American Red Cross Certified in Adult/Child/Toddler CPR, AED, and First Aid.",
+      "* Texas Health & Human Services CBCU Background Approved.",
+      "* Highly trained professionals who adapt their teaching style to any age group."
+    ]
+  },
+  {
+    question: "What kind of events do you host for our child?",
+    answer:
+      "We host year-round events for Karate, Cheerleading, Basketball, and Soccer—many of which involve parent participation! Our goal is to create unique, memorable experiences that go beyond regular classes.",
+  },
+  {
+    question: "Can I get a LUMA Sportz N Fun program in my School, Daycare, After-School Program, or Summer Camp?",
+    answer: [
+      "Absolutely! We offer customizable curriculums designed to fit your program’s needs and requirements.",
+      "Our coaches bring:",
+      "* Consistency and communication.",
+      "* High-level training and professionalism.",
+      "* Positive energy and relationship-building that adds value to your program."
+    ]
+  },
+  {
     question: "Little Warrior Starter Kits / Karate Gear",
     answer:
       "Our Little Warrior Starter Kits take 2-5 weeks to be fully prepared after classes start. We distribute a portion of the starter kit in class in the second & third week except for the karate uniform. We take two weeks to size up all our students for their karate uniforms to ensure we get their correct size. Unlike T-Shirts, Karate uniform sizes are different & must be sized up to ensure the best fit. Our uniforms take 10-15 days to produce and ship. We understand that most gear and uniforms can be found on Amazon for a cheaper price. Our uniforms & gear have our team logo on it so that your child may feel a part of the team. We will not allow any other uniforms or gear in class. We appreciate your understanding.",
-  },
-  {
-    question: "What style of Martial Arts does Luma Sportz teach?",
-    answer:
-      "Level Up Martial Arts offers a variety of options. Mostly focusing on Tae Kwon Do, MMA, Sport Karate, & Self Defense. Little Warriors classes include a mixture of Tae Kwon Do, MMA, Sport Karate, Self Defense, Meditation, Fitness, Character Development, & fun activities! Level UP MMA Classes include Tae Kwon Do, MMA, Sport Karate, Brazilian Jiu Jitsu,  Kickboxing, Boxing, Self Defense, Weapons training, & MMA / Sport Karate Tournament Preparation. Our instructors have an extensive background in tournament competition, weapons, self-defense, MMA training and conditioning, creating demos for 20+ students, right down to your basic karate. ",
-  },
-  {
-    question: "Are Level Up Little Warrior Instructors background checked & qualified?",
-    answer:
-      "Our Level Up Black Belt Instructors are fully Covid-19 Vaccinated, American Red Cross Adult / Child / Toddler: CPR / AED / First Aid Certified, Texas Health & Human Service CBCU Background approved, and highly trained professional Martial Arts Instructors. Our Level Up Instructors can adapt & communicate to any age level of instruction. ",
-  },
-  {
-    question: "How long does it take to get a black belt?",
-    answer:
-      "For Level Up Students, it takes approximately 4-5 years to reach black belt.",
-  },
-  {
-    question: "Can I get the Little Warrior Program or Martial Arts program in my School / Daycare / After - School Program / or Summer Camp Program?",
-    answer:
-      "Absolutely! Level Up has a variety of curriculums designed for your program. Each curriculum can be designed and adapt to your needs and requirements. Our Level Up Black Belt Instructors are consistent, communicative, highly trained Black Belt professionals with great attitudes. We aim to increase more value to your program by bringing our positive energy, consistency, & building meaningful relationships.",
-  },
-  {
-    question: "What sort of things should I consider when choosing a school?",
-    answer:
-      "Picking a school can be tough. Each school has its own business model, goals, and what it wants to achieve for their students. You will see some schools that just want your $$$. They will say your student is ready to test every two weeks whether they've been in class or not and will charge outrageous prices as well. Some schools have instructors that are old in tradition and do not make the classes fun or exciting for their students. Sometimes they're either burnt out and their passion is gone. Then there are the schools that have it all. Enthusiasm, passion, excitement, expectations, wanting the best for your students, a place where they have to work to earn everything, a great community, and actually care about the name on their student's uniforms. Don't settle. Find a great instructor and a great school. You won't regret it.",
   },
   {
     question: "Does Karate teach my child how to fight?",
