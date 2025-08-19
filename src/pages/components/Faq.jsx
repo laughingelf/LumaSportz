@@ -47,11 +47,6 @@ const faqs = [
     ]
   },
   {
-    question: "Little Warrior Starter Kits / Karate Gear",
-    answer:
-      "Our Little Warrior Starter Kits take 2-5 weeks to be fully prepared after classes start. We distribute a portion of the starter kit in class in the second & third week except for the karate uniform. We take two weeks to size up all our students for their karate uniforms to ensure we get their correct size. Unlike T-Shirts, Karate uniform sizes are different & must be sized up to ensure the best fit. Our uniforms take 10-15 days to produce and ship. We understand that most gear and uniforms can be found on Amazon for a cheaper price. Our uniforms & gear have our team logo on it so that your child may feel a part of the team. We will not allow any other uniforms or gear in class. We appreciate your understanding.",
-  },
-  {
     question: "Does Karate teach my child how to fight?",
     answer:
       "Level Up teaches your child how to defend themselves through Martial Arts, but does not condone or teach your child to fight. In fact, we constantly reiterate to your child to never use their karate on their friends or family each class. One of our most important skills we teach all our Little Warriors is our Stranger Danger Safety Course. God forbid anything happens to any of our children, but we also want to be proactive and educate our children how to protect themselves in the situation they are confronted by a Stranger. We keep it simple, safe, and fun for our kids to learn basic self-defense and critical thinking skills for these situations.",
