@@ -8,6 +8,7 @@ const PricingSection = () => {
       description:
         'Our Little Warriors Karate program goes beyond kicks and punches—instilling lifelong values like respect, discipline, confidence, and leadership. Through martial arts, kids build strong character and a positive mindset for success on and off the mat.',
       features: [
+        'Ages 3 and Up',
         'Earn two belts per year!',
         'Parents & students can compete in a real karate tournament together!',
         'Lots of parent involvement and events!',
@@ -20,6 +21,7 @@ const PricingSection = () => {
       description:
         'Kickstart your child’s journey in youth sports with our beginner-friendly Soccer and Basketball program—designed to build confidence, coordination, and teamwork through fun, skill-based activities.',
       features: [
+        'Ages 2 and Up',
         'Learn basic soccer & basketball skills.',
         'Learn fundamentals for each sport.',
         'Fun activities with their teammates.',
@@ -34,6 +36,7 @@ const PricingSection = () => {
       description:
         'Spark school spirit and self-confidence with our beginner Cheerleading program—perfect for kids to learn basic stunts, teamwork, and performance skills in a fun, encouraging environment.',
       features: [
+        'Ages 2 and Up',
         'Learn basic cheerleading skills!',
         'Learn basic pom pom routines!',
         'Simple jumps, rolls, & high kicks!',
