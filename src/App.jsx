@@ -12,6 +12,7 @@ import './App.css'
 import ScrollToTop from './pages/components/ScrollToTop'
 import Navbar from './pages/components/Navbar'
 import Footer from './pages/components/Footer'
+import BoomPage from './pages/BoomPage'
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route path='/contact' element={<Contact/>} />
           <Route path='/prices' element={<Prices/>} />
           <Route path='/locations' element={<Locations/>} />
+          <Route path='/boomshakalaka' element={<BoomPage/>} />
           <Route path='*' element={<NoPage/>} />
         </Routes>
         <Footer />

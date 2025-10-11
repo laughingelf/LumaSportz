@@ -13,7 +13,7 @@ const BoomCard = () => {
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.7 }}
-        src="/img/boom-banner.png"
+        src="/img/boom-banner2.png"
         alt="Boom Shaka Laka (Pre-Order)"
         className="w-full lg:w-1/2 object-cover h-72 lg:h-auto"
         onError={(e) => (e.target.style.display = 'none')}
@@ -35,24 +35,34 @@ const BoomCard = () => {
         </h2>
 
         <div className="flex items-center gap-3">
-          <span className="text-gray-500 line-through text-lg">$24.00</span>
-          <span className="text-2xl font-semibold text-green-600">$18.00</span>
+          <span className="text-gray-500 line-through text-lg">$17.99</span>
+          <span className="text-2xl font-semibold text-green-600">$12.99</span>
         </div>
 
         <p className="text-gray-600 text-md max-w-md">
-          Grab your copy of this boom-tastic book before it’s gone — it’s only here for a little while!
+          Grab your copy of this boom-tastic book before it’s gone, it’s only here for a little while!
           Packed with fun, excitement, and big laughs for awesome kids just like you! 
         </p>
 
-        <motion.a
-          whileHover={{ scale: 1.05 }}
-          href="https://square.link/u/152nPlPX?src=embed"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-4 inline-block bg-blue-600 hover:bg-green-500 text-white font-semibold px-6 py-3 rounded-full shadow-md transition-all"
-        >
-          Buy Now
-        </motion.a>
+        <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
+          <motion.a
+            whileHover={{ scale: 1.05 }}
+            href="https://square.link/u/152nPlPX?src=embed"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-blue-600 hover:bg-green-500 text-white font-semibold px-6 py-3 rounded-full shadow-md transition-all"
+          >
+            Buy Now
+          </motion.a>
+
+          <motion.a
+            whileHover={{ scale: 1.05 }}
+            href="/boomshakalaka" // Replace with your Learn More URL
+            className="inline-block bg-gray-200 hover:bg-blue-100 text-blue-700 font-semibold px-6 py-3 rounded-full shadow-md transition-all"
+          >
+            Learn More
+          </motion.a>
+        </div>
       </motion.div>
     </motion.div>
   );
